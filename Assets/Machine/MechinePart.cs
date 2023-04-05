@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Mechine{
-    // a part of the mechine
+    // a part of the machine
     // the part can transmit the items to another part
     // the part have a max amount, so if the next part is maxed
     // the part should not send to the next part.
@@ -11,7 +11,7 @@ namespace Mechine{
     {
         public List<GameObject> items = new List<GameObject>(); //items inside the part
         public int maxRefineItems; // max amount of items
-        public MechinePart nextPart; // next part of the mechine
+        public MechinePart nextPart; // next part of the machine
         public int timeBetweenUpdates; // how many times the part should update the part
         private double nextUpdate=1; // keep track for second logic
         private double timer = 0; // second logic
