@@ -10,6 +10,7 @@ namespace Mechine{
 
         public override void updateMechine()
         {
+            
             base.updateMechine();
             string text = "";
             for(int i = 0; i < items.Count; i++){

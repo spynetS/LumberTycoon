@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1567dee-f1b4-430c-b251-2a44617addfb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Machine/Machine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Machine/Machine.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tycooner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tycooner/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Machine/MechinePart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Machine/MechinePart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Attack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resorces/Tree/Resource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resorces/Tree/Resource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resorces/Tree/Tree.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resorces/Tree/Tree.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +20,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d8e40667a04f4ebea32807892bd421f3159c00/26/5a28a400/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d8e40667a04f4ebea32807892bd421f3159c00/b0/3f287ecc/RangeInt.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "settings.editor.selected.configurable": "preferences.editor"
+  }
+}]]></component>
   <component name="TaskManager">
     <servers />
   </component>
