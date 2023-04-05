@@ -1,2 +1,2 @@
 Klicka ut ett plane och sedan dra på gräset gör sedan så att de blir see through (cutout brukar funka bra ändras vid opaque) och anpassa storlek lägg in skiten i 
-terrain place object och så e dä bara att spamma ut skiten
+terrain place object och gör så att de e random storlek skapar nice variation så e dä bara att spamma ut skiten 
