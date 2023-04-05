@@ -93,6 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6205880332448708527}
   - component: {fileID: 576631140603294910}
+  - component: {fileID: -8454491222664133926}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -130,8 +131,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  dropMin: 1
+  dropMax: 4
   dropers:
   - {fileID: 6084338743795345005, guid: 6bb7b13f6deb16b3ba9a9558c72b6899, type: 3}
+  animator: {fileID: 0}
+--- !u!95 &-8454491222664133926
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6725114375281077525}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bf3fcef4417b64aa1b1354ba74f617eb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7146128130242403908
 GameObject:
   m_ObjectHideFlags: 0

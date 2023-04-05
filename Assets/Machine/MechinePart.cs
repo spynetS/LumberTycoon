@@ -29,8 +29,6 @@ namespace Mechine{
         }
         public bool sendItem(int i = 0){
             // if the next part is full dont send the item
-            Debug.Log(nextPart.items.Count);
-            Debug.Log(nextPart.maxRefineItems);
             if(nextPart.items.Count <= nextPart.maxRefineItems){
                 GameObject item = items[i];
                 nextPart.getItem(item);
@@ -49,7 +47,6 @@ namespace Mechine{
                 // Change the next update (current second+1)
                 nextUpdate=(Time.time)+(0.01);
                 // Call your fonction
-                Debug.Log(nextUpdate);
                 UpdateEverySecond();
             }
             var cubeRenderer = transform.gameObject.GetComponent<Renderer>();

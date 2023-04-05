@@ -5,26 +5,37 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
+    public Tool tool;
+    public GameObject resourceInRange;
+    private int timer = 100000;
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)){
-            gameObject.transform.Rotate(new Vector3(10,0,0));
-            gameObject.transform.GetComponent<SphereCollider>().enabled = true;
+        if (Input.GetMouseButtonDown(0)){ // if mouse is down
+            tool.attackAnimation();
         }
+        if (Input.GetMouseButton(0)){ // if mouse is down 
+            tool.attackAnimation();
+            // if there is a resource in range and the timer is right 
+            if (resourceInRange != null && timer > tool.timeBetweenHits) 
+            {
+                resourceInRange.GetComponent<Resource>().getDamage(tool.damage);
+                timer = 0;
+            }
 
-        if (Input.GetMouseButtonUp(0))
+            timer++;
+        }
+        else
         {
-            gameObject.transform.Rotate(new Vector3(-10,0,0));
-            gameObject.transform.GetComponent<SphereCollider>().enabled = false;
-            
+            timer = 100000;
         }
     }
 
     private void OnTriggerEnter(Collider other)
-    {
-        try
-        {
-            other.GetComponentInParent<Resource>().health -= 50;
-        } catch{}
+    {   
+        if(other.gameObject.GetComponent<Resource>() != null)
+            resourceInRange = other.gameObject;
+        
+        if(other.gameObject.GetComponentInParent<Resource>() != null)
+            resourceInRange = other.gameObject.transform.parent.gameObject;
     }
 }
