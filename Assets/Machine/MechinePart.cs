@@ -29,7 +29,7 @@ namespace Mechine{
         }
         public bool sendItem(int i = 0){
             // if the next part is full dont send the item
-            if(nextPart.items.Count <= nextPart.maxRefineItems){
+            if(nextPart.items.Count < nextPart.maxRefineItems){
                 GameObject item = items[i];
                 nextPart.getItem(item);
                 items.Remove(item);

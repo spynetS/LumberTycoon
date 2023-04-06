@@ -19,6 +19,8 @@ public class Attack : MonoBehaviour
             if (resourceInRange != null && timer > tool.timeBetweenHits) 
             {
                 resourceInRange.GetComponent<Resource>().getDamage(tool.damage);
+                Debug.Log(resourceInRange.GetComponent<Resource>());
+                 
                 timer = 0;
             }
 
