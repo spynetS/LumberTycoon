@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18029143, g: 0.22572419, b: 0.30693057, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1644,23 +1644,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: 4e8a62b1a94a6cd61b0c952720a61468, type: 3}
   m_PrefabInstance: {fileID: 1391475516}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &748123666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 748123662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 486ac8fd7e1d2eaf7a6f93b036f5dce0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  items: []
-  maxRefineItems: 2
-  nextPart: {fileID: 748123667}
-  timeBetweenUpdates: 100
-  mytext: {fileID: 692244523}
 --- !u!114 &748123667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2192,6 +2175,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1280425878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280425872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51d6d2c24aae4bf0b4ad2f9f519265e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: {fileID: 1632297414}
+  refiner: {fileID: 0}
+  output: {fileID: 748123667}
 --- !u!1 &1333098755
 GameObject:
   m_ObjectHideFlags: 0
@@ -2629,6 +2627,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 86ce10510e3e7a02f985d1c2a925b15d, type: 2}
+    - target: {fileID: -516098083770646512, guid: 4e8a62b1a94a6cd61b0c952720a61468, type: 3}
+      propertyPath: m_Name
+      value: input
+      objectReference: {fileID: 0}
     - target: {fileID: -93644311446669682, guid: 4e8a62b1a94a6cd61b0c952720a61468, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2657,6 +2659,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 86ce10510e3e7a02f985d1c2a925b15d, type: 2}
+    - target: {fileID: 5233112405309087440, guid: 4e8a62b1a94a6cd61b0c952720a61468, type: 3}
+      propertyPath: m_Name
+      value: asd
+      objectReference: {fileID: 0}
     - target: {fileID: 6148596154634031546, guid: 4e8a62b1a94a6cd61b0c952720a61468, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2665,6 +2671,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e8ed8c98ac6009698affa934e3188105, type: 2}
+    - target: {fileID: 6512510688612296998, guid: 4e8a62b1a94a6cd61b0c952720a61468, type: 3}
+      propertyPath: m_Name
+      value: refiner
+      objectReference: {fileID: 0}
     - target: {fileID: 6829333093618665122, guid: 4e8a62b1a94a6cd61b0c952720a61468, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2703,6 +2713,28 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 86ce10510e3e7a02f985d1c2a925b15d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e8a62b1a94a6cd61b0c952720a61468, type: 3}
+--- !u!1 &1391475517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6512510688612296998, guid: 4e8a62b1a94a6cd61b0c952720a61468, type: 3}
+  m_PrefabInstance: {fileID: 1391475516}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1391475518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391475517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 486ac8fd7e1d2eaf7a6f93b036f5dce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: []
+  maxRefineItems: 2
+  nextPart: {fileID: 748123667}
+  timeBetweenUpdates: 100
+  mytext: {fileID: 692244523}
 --- !u!1 &1421465760
 GameObject:
   m_ObjectHideFlags: 0
@@ -2975,7 +3007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items: []
   maxRefineItems: 10
-  nextPart: {fileID: 748123666}
+  nextPart: {fileID: 1391475518}
   timeBetweenUpdates: 10
 --- !u!135 &1632297415
 SphereCollider:
