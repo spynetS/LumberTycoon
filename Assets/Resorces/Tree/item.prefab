@@ -254,5 +254,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55751a297193b6f79b2d1157a60567b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hardness: 0
   refined: 0
+  refinedItems:
+  - {fileID: 56056497688335876, guid: 2b4a1403ce45e55c4b4a9dd3af4267d8, type: 3}
+  - {fileID: 6725114375281077525, guid: 7173d28268fdb5e57b9c028acfc6440b, type: 3}
+  refinedChance: 0a0000005a000000

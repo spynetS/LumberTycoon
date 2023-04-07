@@ -27,11 +27,18 @@ namespace Mechine{
             }
             timer += 1;
         }
-        public bool sendItem(int i = 0){
+        public bool sendItem(int i = 0, GameObject sendItem = null){
             // if the next part is full dont send the item
             if(nextPart.items.Count < nextPart.maxRefineItems){
                 GameObject item = items[i];
-                nextPart.getItem(item);
+                if (sendItem != null)
+                {
+                    nextPart.getItem(sendItem);
+                }
+                else
+                {
+                    nextPart.getItem(item);
+                }
                 items.Remove(item);
                 return true;
             }

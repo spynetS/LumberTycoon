@@ -8,7 +8,8 @@ namespace Mechine{
     {
         public override void updateMechine()
         {
-            sendItem();
+            if(items.Count > 0)
+                sendItem();
         }
     }
 }

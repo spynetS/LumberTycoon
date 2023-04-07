@@ -7,19 +7,22 @@ namespace Mechine{
     public class Refiner : MechinePart
     {
         public TMP_Text mytext;
-
         public override void updateMechine()
         {
-            
             base.updateMechine();
             string text = "";
-            for(int i = 0; i < items.Count; i++){
-                items[i].GetComponent<RefineItem>().refined++;
-                text += items[i].GetComponent<RefineItem>().refined.ToString()+",";
-                if(items[i].GetComponent<RefineItem>().refined > 100){
-                    sendItem(i);
+            
+            for(int i = 0; i < items.Count; i++)
+            {
+                RefineItem item = items[i].GetComponent<RefineItem>();
+                item.refined++;
+                text += item.refined.ToString()+",";
+                
+                if(item.refined > 100){
+                    sendItem(i, item.getRefined());
                 }
             }
+            
             mytext.text = text; 
         }
         // public override void getItem(GameObject item)
