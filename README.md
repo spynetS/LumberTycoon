@@ -29,6 +29,6 @@ skapa produkter och uppgradera sin maskin så länge de vill. Spelet har dock fl
 till exempel att hitta sällsynta resurser eller produkter, eller att nå en viss inkomst.
 
 ## Grafik och ljud
-Spelet har en lowpoly smooth 3D-grafik med hög. 
+Spelet har en lowpoly smooth 3D-grafik med möjlig outlijn för högre kontrast och spelkänsla. 
 Spelet har också realistiska ljudeffekter som återspeglar de olika aktiviteterna i spelet, 
 till exempel hackning, grävning och skapande. Spelet har också en lugn och atmosfärisk bakgrundsmusik som passar spelets tema.
