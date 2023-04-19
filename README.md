@@ -1,7 +1,9 @@
 # LumberTycoon
 
 Lumine 
-
+Finns det några begränsningar för hur mycket matrial man kan kast i maskinen? 
+Kan man lägga ner det man har eller kan man samla hur mycket som helst? 
+Saknar roller för varje medlem! //Petra
 
 ## Koncept
 Lumine är ett 3D-spel där spelaren har en maskin som kan omvandla träd och mineraler till olika produkter. 
