@@ -2,18 +2,23 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 
 namespace Player
 {
-
     public class Inventory : MonoBehaviour
     {
         public List<Stack> stacks = new List<Stack>();
+        public Dictionary<string, int> balleKlaa = new Dictionary<string, int>()
+        {
+            {"wooddroped",10},
+            
+        };
 
         public int stackSize = 3;
-
+        
         public void add(GameObject ob)
         {
             foreach (Stack stack in stacks)
@@ -33,6 +38,8 @@ namespace Player
             {
                 Stack s = new Stack();
                 s.items.Add(ob);
+                s.stackSize = balleKlaa[ob.tag];
+                
                 ob.SetActive(false);
 
                 stacks.Add(s);

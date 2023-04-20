@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1567dee-f1b4-430c-b251-2a44617addfb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Ui/Itemholder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Ui/Itemholder.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tycooner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tycooner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Machine/3d/Materials/Prototype 1_DefaultMaterial_BaseMap 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Machine/3d/Materials/Prototype 1_DefaultMaterial_BaseMap 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Machine/Refiner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Machine/Refiner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/Stack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Stack.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/Ui/InventoryUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Ui/InventoryUi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resorces/Tree/DroppedItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resorces/Tree/DroppedItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Ui/Itemholder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Ui/Itemholder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resorces/Tree/item.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resorces/Tree/item.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +19,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d8e40667a04f4ebea32807892bd421f3159c00/6a/ca29658d/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d44b17e136d09081da1e8fd0e8c83fde60e11818b9f2442d7ed8cb733fae895e/System.Collections.Generic.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/YourScriptEditor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -109,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680858478739</updated>
       <workItem from="1680858481369" duration="4427000" />
-      <workItem from="1682018596814" duration="5781000" />
+      <workItem from="1682018596814" duration="8242000" />
     </task>
     <servers />
   </component>

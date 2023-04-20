@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Player
 {
     [System.Serializable]
-    public class Stack
+    public class Stack 
 
     {
         public int stackSize = 5;

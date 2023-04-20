@@ -13,7 +13,7 @@ namespace Player.Ui
         public Player player;
         public void dropStack()
         {
-            if (stack.items.Count > 0)
+            if (stack != null)
             {
                 player.dropItem(stack.items[0]);
             }
@@ -21,11 +21,16 @@ namespace Player.Ui
 
         private void Update()
         {
-            Image image = transform.GetChild(0).gameObject.GetComponent<Image>();
-            image.sprite = stack.items.Count > 0 ? stack.items[0].GetComponent<DroppedItem>().inventoryImage : null;
+            try
+            {
+                Image image = transform.GetChild(0).gameObject.GetComponent<Image>();
+                image.sprite = stack != null ? stack.items[0].GetComponent<DroppedItem>().inventoryImage : null;
+                
+                TMP_Text mytext = transform.GetChild(1).GetComponent<TMP_Text>();
+                mytext.text = stack != null? stack.items.Count.ToString() : "";
+            }
+            catch (Exception e) { }
             
-            TMP_Text mytext = transform.GetChild(1).GetComponent<TMP_Text>();
-            mytext.text = stack.items.Count > 0 ? stack.items.Count.ToString() : "";
         }
 
         public void setStack(in Stack stack)
