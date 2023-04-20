@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d1567dee-f1b4-430c-b251-2a44617addfb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Player/Ui/Itemholder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Player/Ui/Itemholder.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tycooner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tycooner/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Machine/3d/Materials/Prototype 1_DefaultMaterial_BaseMap 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Machine/3d/Materials/Prototype 1_DefaultMaterial_BaseMap 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Machine/Input.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Machine/Input.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Machine/Machine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Machine/Machine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Machine/MechinePart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Machine/MechinePart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Machine/RefineItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Machine/RefineItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Machine/Refiner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Machine/Refiner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resorces/Tree/item.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resorces/Tree/item.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Stack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Stack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Ui/InventoryUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Ui/InventoryUi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resorces/Tree/DroppedItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resorces/Tree/DroppedItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +24,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d8e40667a04f4ebea32807892bd421f3159c00/26/5a28a400/Transform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d8e40667a04f4ebea32807892bd421f3159c00/b0/3f287ecc/RangeInt.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d8e40667a04f4ebea32807892bd421f3159c00/6a/ca29658d/Component.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -34,13 +39,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "preferences.editor",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "/home/spy/.config/JetBrains/Rider2022.3/resharper-host/DecompilerCache",
-      "/home/spy/.config/JetBrains/Rider2022.3/resharper-host/SourcesCache",
+      "/home/spy/.config/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
+      "/home/spy/.config/JetBrains/Rider2023.1/resharper-host/SourcesCache",
       "/home/spy/.local/share/Symbols/src"
     ]
   }
@@ -49,6 +58,14 @@
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../Unity/Hub/Editor/2021.3.22f1/Editor/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../Unity/Hub/Editor/2021.3.22f1/Editor/Unity" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -92,6 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680858478739</updated>
       <workItem from="1680858481369" duration="4427000" />
+      <workItem from="1682018596814" duration="5781000" />
     </task>
     <servers />
   </component>

@@ -7,14 +7,14 @@ namespace Player
     public class Stack
 
     {
-    public int stackSize = 10;
-    public List<GameObject> items = new List<GameObject>();
+        public int stackSize = 5;
+        public List<GameObject> items = new List<GameObject>();
 
 
-    public GameObject getFirst()
-    {
-        return items[0];
-    }
+        public GameObject getFirst()
+        {
+            return items.Count > 0 ? items[0] : null;
+        }
 
     }
 }

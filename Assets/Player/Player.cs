@@ -21,17 +21,23 @@ namespace Player{
         {
             try
             {
-                other.GetComponent<Mechine.Input>().getItem(inventory.stacks[0].items[0]);
-                inventory.remove(inventory.stacks[0].items[0]);
+                if (other.GetComponent<Mechine.Input>() != null)
+                {
+                    other.GetComponent<Mechine.Input>().getItem(inventory.stacks[0].items[0]);
+                    inventory.remove(inventory.stacks[0].items[0]);
+                }
             } catch{}
 
-            try
-            {
-                other.GetComponent<DroppedItem>().gameObject.SetActive(false);
-
+            if (other.GetComponent<DroppedItem>() != null)
                 inventory.add(other.gameObject);
 
-            }catch{}
+        }
+        public void dropItem(GameObject ob)
+        {
+            ob.transform.position = transform.position + (transform.forward * 5);
+            ob.SetActive(true);
+            ob.GetComponent<DroppedItem>().drop();
+            inventory.remove(ob);
         }
     }
 }

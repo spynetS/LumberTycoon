@@ -11,17 +11,20 @@ namespace Mechine{
         {
             base.updateMechine();
             string text = "";
-            
-            for(int i = 0; i < items.Count; i++)
+            try
             {
-                RefineItem item = items[i].GetComponent<RefineItem>();
-                item.refined++;
-                text += item.refined.ToString()+",";
-                
-                if(item.refined > 100){
-                    sendItem(i, item.getRefined());
+                for(int i = 0; i < items.Count; i++)
+                {
+                    RefineItem item = items[i].GetComponent<RefineItem>();
+                    item.refined++;
+                    text += item.refined.ToString()+",";
+                    
+                    if(item.refined > 100){
+                        sendItem(i, item.getRefined());
+                    }
                 }
             }
+            catch {}
             
             mytext.text = text; 
         }

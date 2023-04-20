@@ -11,6 +11,4 @@ public class DroppedItem : MonoBehaviour
         body.AddForce(new Vector3(Random.value*2,5,Random.value*2)*50);
     }
 
-    
-
 }

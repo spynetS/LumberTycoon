@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Player;
+using Player.Ui;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,16 +11,22 @@ public class InventoryUi : MonoBehaviour
 {
     public Inventory inventory;
     public Sprite yourSprite;
+    public GameObject inventoryPanel;
     private void Update()
     {
-        for (int i = 0; i < this.transform.childCount; i++)
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            inventoryPanel.GetComponent<Canvas>().enabled = !inventoryPanel.GetComponent<Canvas>().enabled;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = inventoryPanel.GetComponent<Canvas>().enabled;
+            
+        }
+        for (int i = 0; i < this.inventory.stacks.Count; i++)
         {
             // Add the sprite to the child
             Transform child = this.transform.GetChild(i);
-            // Add the sprite to the child
-            Image image = child.gameObject.AddComponent<Image>();
-            image.sprite = yourSprite;
-        }
 
+            child.GetComponent<Itemholder>().setStack(inventory.stacks[i]);
+        }
     }
 }                

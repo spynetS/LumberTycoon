@@ -14,28 +14,47 @@ namespace Player
 
         public int stackSize = 3;
 
-        // Update is called once per frame
         public void add(GameObject ob)
         {
             foreach (Stack stack in stacks)
             {
-                if (stack.getFirst().tag == ob.tag)
+                if (stack.getFirst().CompareTag(ob.tag))
                 {
-                    if(stack.items.Count < stack.stackSize) stack.items.Add(ob);
-                    return;
+                    if (stack.items.Count < stack.stackSize)
+                    {
+                        stack.items.Add(ob);
+                        ob.SetActive(false);
+                        return;
+                    }
                 }
             }
 
-            Stack s = new Stack();
-            s.items.Add(ob);
+            if (stacks.Count < stackSize)
+            {
+                Stack s = new Stack();
+                s.items.Add(ob);
+                ob.SetActive(false);
 
-            stacks.Add(s);
+                stacks.Add(s);
+            }
         }
 
         public void remove(GameObject ob)
         {
-            
+            foreach (Stack stack in stacks)
+            {
+                    Debug.Log(stack.items);
+                if (stack.getFirst().CompareTag(ob.tag))
+                {
+                    stack.items.Remove(ob);
+                    if (stack.items.Count == 0)
+                    {
+                        stacks.Remove(stack);
+                    }
+                }
+            }
         }
+
     }
     
 }
