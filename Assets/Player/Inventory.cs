@@ -11,6 +11,7 @@ namespace Player
     public class Inventory : MonoBehaviour
     {
         public List<Stack> stacks = new List<Stack>();
+        // define how many of a droped item can stack (item tag)(stackamount)
         public Dictionary<string, int> balleKlaa = new Dictionary<string, int>()
         {
             {"wooddroped",10},
@@ -25,7 +26,7 @@ namespace Player
             {
                 if (stack.getFirst().CompareTag(ob.tag))
                 {
-                    if (stack.items.Count < stack.stackSize)
+                    if (stack.items.Count < stack.stackSize && stacks.Count <= stackSize)
                     {
                         stack.items.Add(ob);
                         ob.SetActive(false);
