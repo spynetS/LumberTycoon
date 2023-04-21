@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 6084338743795344995}
   m_Layer: 0
   m_Name: item
-  m_TagString: Untagged
+  m_TagString: wooddroped
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -216,6 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d8e6b076e15091d9015dbf8f3ac148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryImage: {fileID: 21300000, guid: d5616ab6173fbe84b822e0c6afbb84b0, type: 3}
 --- !u!65 &6084338743795344992
 BoxCollider:
   m_ObjectHideFlags: 0

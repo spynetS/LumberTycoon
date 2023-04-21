@@ -10,10 +10,10 @@ public class Attack : MonoBehaviour
     private int timer = 100000;
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)){ // if mouse is down
+        if (!Cursor.visible && Input.GetMouseButtonDown(0)){ // if mouse is down
             tool.attackAnimation();
         }
-        if (Input.GetMouseButton(0)){ // if mouse is down 
+        if (!Cursor.visible && Input.GetMouseButton(0)){ // if mouse is down 
             tool.attackAnimation();
             // if there is a resource in range and the timer is right 
             if (resourceInRange != null && timer > tool.timeBetweenHits) 

@@ -6,22 +6,38 @@ using UnityEngine;
 using Mechine;
 using Unity.VisualScripting;
 
-public class Player : MonoBehaviour
-{
-    public TMP_Text mytext;
-    public List<GameObject> inventory = new List<GameObject>();
+namespace Player{
 
-    private void Update()
+    public class Player : MonoBehaviour
     {
-        mytext.text = inventory.Count.ToString();
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        try
+        public TMP_Text mytext;
+        public Inventory inventory;
+        private void Update()
         {
-            other.GetComponent<Mechine.Input>().getItem(inventory[0]);
-            inventory.Remove(inventory[0]);
-        } catch{}
+            mytext.text = inventory.stacks.Count.ToString();
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            try
+            {
+                if (other.GetComponent<Mechine.Input>() != null)
+                {
+                    other.GetComponent<Mechine.Input>().getItem(inventory.stacks[0].items[0]);
+                    inventory.remove(inventory.stacks[0].items[0]);
+                }
+            } catch{}
+
+            if (other.GetComponent<DroppedItem>() != null)
+                inventory.add(other.gameObject);
+
+        }
+        public void dropItem(GameObject ob)
+        {
+            ob.transform.position = transform.position + (transform.forward * 5);
+            ob.SetActive(true);
+            ob.GetComponent<DroppedItem>().drop();
+            inventory.remove(ob);
+        }
     }
 }

@@ -43,21 +43,20 @@ public class PlayerMovement : MonoBehaviour
 
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+        
 
-        playerCamera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        transform.Rotate(Vector3.up * mouseX);
+        if (!Cursor.visible)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            playerCamera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+            transform.Rotate(Vector3.up * mouseX);
+        }
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            Cursor.visible = !Cursor.visible;
         }
 
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
     }
 
     void OnCollisionEnter(Collision other)
