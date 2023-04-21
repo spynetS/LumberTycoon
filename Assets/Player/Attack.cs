@@ -18,7 +18,8 @@ public class Attack : MonoBehaviour
             // if there is a resource in range and the timer is right 
             if (resourceInRange != null && timer > tool.timeBetweenHits) 
             {
-                resourceInRange.GetComponent<Resource>().getDamage(tool.damage);
+                
+                resourceInRange.GetComponent<Resource>().getDamage(tool);
                 Debug.Log(resourceInRange.GetComponent<Resource>());
                  
                 timer = 0;

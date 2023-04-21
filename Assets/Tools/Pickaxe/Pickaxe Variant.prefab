@@ -101,4 +101,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   timeBetweenHits: 100
+  name: pickaxe
   animator: {fileID: 2150967460067631816}

@@ -9,6 +9,7 @@ public class Resource : MonoBehaviour
     public int dropMax= 4;
     public List<GameObject> dropers;
     public Animator animator;
+    public List<string> workingTools;
     public void drop()
     {
         int amount = (int) Random.Range(dropMin, dropMax);
@@ -21,10 +22,13 @@ public class Resource : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void getDamage(int amountOfDamage)
+    public void getDamage(Tool tool)
     {
-        health -= amountOfDamage;
-        animator.SetTrigger("hit");
+        if (workingTools.Contains(tool.name))
+        {
+            health -= tool.damage;
+            animator.SetTrigger("hit");
+        }
     }
     
     void Update(){

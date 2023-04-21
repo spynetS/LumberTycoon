@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d1567dee-f1b4-430c-b251-2a44617addfb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tycooner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tycooner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Stack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Stack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Ui/InventoryUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Ui/InventoryUi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Ui/Itemholder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Ui/Itemholder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resorces/Tree/item.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resorces/Tree/item.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Attack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resorces/Resource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resorces/Resource.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,26 +27,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/home/spy/.config/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
-      "/home/spy/.config/JetBrains/Rider2023.1/resharper-host/SourcesCache",
-      "/home/spy/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/home/spy/.config/JetBrains/Rider2023.1/resharper-host/DecompilerCache&quot;,
+      &quot;/home/spy/.config/JetBrains/Rider2023.1/resharper-host/SourcesCache&quot;,
+      &quot;/home/spy/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../Unity/Hub/Editor/2021.3.22f1/Editor/Unity" />
