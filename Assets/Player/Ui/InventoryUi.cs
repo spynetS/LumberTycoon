@@ -15,13 +15,7 @@ namespace Player.Ui
         public GameObject inventoryPanel;
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Tab))
-            {
-                inventoryPanel.GetComponent<Canvas>().enabled = !inventoryPanel.GetComponent<Canvas>().enabled;
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = inventoryPanel.GetComponent<Canvas>().enabled;
-                
-            }
+           
             //clear stacks
             for (int i = 0; i < transform.childCount; i++)
             {
