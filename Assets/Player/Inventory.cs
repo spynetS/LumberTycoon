@@ -15,6 +15,7 @@ namespace Player
         public Dictionary<string, int> balleKlaa = new Dictionary<string, int>()
         {
             {"wooddroped",10},
+            {"stonedroped",5},
             
         };
 
