@@ -52,23 +52,21 @@ public class PlayerMovement : MonoBehaviour
             moveSpeed = 5;
         }
 
-        if (!Cursor.visible)
-        {
+        if (!Cursor.visible) {
             Cursor.lockState = CursorLockMode.Locked;
             playerCamera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
             transform.Rotate(Vector3.up * mouseX);
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
             Cursor.visible = !Cursor.visible;
         }
 
-        move_X = Input.GetAxis("Horizontal") * (moveSpeed * Time.deltaTime);
-        move_Z = Input.GetAxis("Vertical") * (moveSpeed * Time.deltaTime);
+        float horizontalInput = Input.GetAxisRaw("Horizontal");
+        float verticalInput = Input.GetAxisRaw("Vertical");
 
-
-        Move();
+        Vector3 movement = (transform.forward * verticalInput + transform.right * horizontalInput).normalized;
+        rb.velocity = (movement * (moveSpeed * 50 * Time.fixedDeltaTime)) + new Vector3(0f, rb.velocity.y, 0f);
     }
 
     private void Move()
