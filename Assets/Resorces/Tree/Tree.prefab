@@ -137,7 +137,7 @@ MonoBehaviour:
   - {fileID: 6084338743795345005, guid: d1a22ebf4263fa93a85e7ef66b8093ca, type: 3}
   animator: {fileID: -8454491222664133926}
   workingTools:
-  - pickaxe
+  - axe
 --- !u!95 &-8454491222664133926
 Animator:
   serializedVersion: 5

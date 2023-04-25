@@ -24,13 +24,8 @@ public class Attack : MonoBehaviour
                  
                 timer = 0;
             }
-
-            timer++;
         }
-        else
-        {
-            timer = 100000;
-        }
+        timer++;
     }
 
     private void OnTriggerExit(Collider other)
