@@ -14,17 +14,31 @@ namespace Player{
         public Inventory inventory;
         private void Update()
         {
-            mytext.text = inventory.stacks.Count.ToString();
         }
 
         private void OnTriggerEnter(Collider other)
         {
+                if (other.GetComponent<Output>() != null)
+                {
+                    Output o = other.GetComponent<Output>();
+                    foreach (GameObject g in o.items)
+                    {
+                        Debug.Log(g);
+                        inventory.add(g);
+                    }
+                    o.items.Clear();
+                }
             try
-            {
+            { 
                 if (other.GetComponent<Mechine.Input>() != null)
                 {
-                    other.GetComponent<Mechine.Input>().getItem(inventory.stacks[0].items[0]);
-                    inventory.remove(inventory.stacks[0].items[0]);
+                    GameObject o = inventory.stacks[0].items[0];
+                    // if the item is refineable
+                    if (o.GetComponent<RefineItem>() != null)
+                    {
+                        other.GetComponent<Mechine.Input>().getItem(o);
+                        inventory.remove(o);
+                    }
                 }
             } catch{}
 

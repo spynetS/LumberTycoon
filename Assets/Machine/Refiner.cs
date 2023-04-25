@@ -19,14 +19,18 @@ namespace Mechine{
                     item.refined++;
                     text += item.refined.ToString()+",";
                     
-                    if(item.refined > 100){
-                        sendItem(i, item.getRefined());
+                    if(item.refined > 100)
+                    {
+                        GameObject newItem = Instantiate(item.getRefined());
+                        newItem.SetActive(false);
+                        Destroy(item.gameObject);
+                        
+                        sendItem(i, newItem);
                     }
                 }
             }
             catch {}
             
-            mytext.text = text; 
         }
         // public override void getItem(GameObject item)
         // {

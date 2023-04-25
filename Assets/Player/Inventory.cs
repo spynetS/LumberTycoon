@@ -25,7 +25,7 @@ namespace Player
         {
             foreach (Stack stack in stacks)
             {
-                if (stack.getFirst().CompareTag(ob.tag))
+                if (stack.getFirst().GetComponent<DroppedItem>().name == ob.GetComponent<DroppedItem>().name)
                 {
                     if (stack.items.Count < stack.stackSize && stacks.Count <= stackSize)
                     {
@@ -53,7 +53,7 @@ namespace Player
             foreach (Stack stack in stacks)
             {
                     Debug.Log(stack.items);
-                if (stack.getFirst().CompareTag(ob.tag))
+                if (stack.getFirst().GetComponent<DroppedItem>().name == ob.GetComponent<DroppedItem>().name)
                 {
                     stack.items.Remove(ob);
                     if (stack.items.Count == 0)
@@ -63,7 +63,5 @@ namespace Player
                 }
             }
         }
-
     }
-    
 }
