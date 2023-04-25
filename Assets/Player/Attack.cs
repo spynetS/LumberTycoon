@@ -33,6 +33,11 @@ public class Attack : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        resourceInRange = null;
+    }
+
     private void OnTriggerEnter(Collider other)
     {   
         if(other.gameObject.GetComponent<Resource>() != null)

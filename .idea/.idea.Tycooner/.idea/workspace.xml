@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1567dee-f1b4-430c-b251-2a44617addfb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tycooner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tycooner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eriks3D/Lumine 3D/Cliff 1/Ljus/Cliff 1 lp_Material.034_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eriks3D/Lumine 3D/Cliff 1/Ljus/Cliff 1 lp_Material.034_Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resorces/Tree/Tree.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resorces/Tree/Tree.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resorces/Tree/item.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resorces/Tree/item.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +102,7 @@
       <updated>1680858478739</updated>
       <workItem from="1680858481369" duration="4427000" />
       <workItem from="1682018596814" duration="8242000" />
-      <workItem from="1682162005609" duration="927000" />
+      <workItem from="1682162005609" duration="1526000" />
     </task>
     <servers />
   </component>
