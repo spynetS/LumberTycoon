@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-      [SerializeField] private float moveSpeed = 15f;
+    [SerializeField] private float moveSpeed = 15f;
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private float lookSensitivity = 3f;
 
+    [SerializeField] private bool isGrounded;
+    
     private Rigidbody rb;
     private Camera playerCamera;
     private float xRotation = 0f;
-    private bool isGrounded;
+    private float move_X;
+    private float move_Z;
 
     void Start()
     {
@@ -23,17 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
-        float verticalInput = Input.GetAxisRaw("Vertical");
 
-        Vector3 movement = (transform.forward * verticalInput + transform.right * horizontalInput).normalized;
-        rb.velocity = movement * moveSpeed + new Vector3(0f, rb.velocity.y, 0f);
-
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isGrounded = false;
-        }
     }
 
     void Update()
@@ -44,6 +37,20 @@ public class PlayerMovement : MonoBehaviour
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
         
+
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            isGrounded = false;
+        }
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            moveSpeed = 10;
+        }else
+        {
+            moveSpeed = 5;
+        }
 
         if (!Cursor.visible)
         {
@@ -57,6 +64,17 @@ public class PlayerMovement : MonoBehaviour
             Cursor.visible = !Cursor.visible;
         }
 
+        move_X = Input.GetAxis("Horizontal") * (moveSpeed * Time.deltaTime);
+        move_Z = Input.GetAxis("Vertical") * (moveSpeed * Time.deltaTime);
+
+
+        Move();
+    }
+
+    private void Move()
+    {
+        transform.Translate(move_X, 0, 0);
+        transform.Translate(0, 0, move_Z);
     }
 
     void OnCollisionEnter(Collision other)
