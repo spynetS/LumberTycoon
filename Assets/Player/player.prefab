@@ -461,7 +461,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.98242086, z: -0, w: 0.18667966}
   m_LocalPosition: {x: -10.8, y: 1.57, z: 0.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6028381173036324964}
   - {fileID: 6028381174144441852}
@@ -549,7 +549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  jumpForce: 300
+  jumpForce: 400
   lookSensitivity: 3
   isGrounded: 1
 --- !u!54 &6028381172665335512
