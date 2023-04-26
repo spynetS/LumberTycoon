@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Mechine;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
@@ -47,7 +48,17 @@ namespace Player
                 stacks.Add(s);
             }
         }
+        
+        public GameObject getResorceItem()
+        {
+            foreach (Stack stack in stacks)
+            {
+                if (stack.getFirst().GetComponent<RefineItem>() != null) return stack.getFirst();
+            }
 
+            return null;
+        }
+        
         public void remove(GameObject ob)
         {
             foreach (Stack stack in stacks)

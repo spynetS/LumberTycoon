@@ -32,7 +32,7 @@ namespace Player{
             { 
                 if (other.GetComponent<Mechine.Input>() != null)
                 {
-                    GameObject o = inventory.stacks[0].items[0];
+                    GameObject o = inventory.getResorceItem();
                     // if the item is refineable
                     if (o.GetComponent<RefineItem>() != null)
                     {
@@ -46,6 +46,7 @@ namespace Player{
                 inventory.add(other.gameObject);
 
         }
+        
         public void dropItem(GameObject ob)
         {
             ob.transform.position = transform.position + (transform.forward * 5);

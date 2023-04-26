@@ -162,8 +162,7 @@ MonoBehaviour:
   refined: 0
   refinedItems:
   - {fileID: 6084338743795345005, guid: 00ee28cb182f697b195a752b0057ed30, type: 3}
-  - {fileID: 6084338743795345005, guid: 00ee28cb182f697b195a752b0057ed30, type: 3}
-  refinedChance: 0a0000005a000000
+  refinedChance: 64000000
 --- !u!1001 &2808074447836713668
 PrefabInstance:
   m_ObjectHideFlags: 0
