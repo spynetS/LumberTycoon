@@ -161,8 +161,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   refined: 0
   refinedItems:
-  - {fileID: 56056497688335876, guid: 2b4a1403ce45e55c4b4a9dd3af4267d8, type: 3}
-  - {fileID: 6725114375281077525, guid: 7173d28268fdb5e57b9c028acfc6440b, type: 3}
+  - {fileID: 6084338743795345005}
+  - {fileID: 6084338743795345005}
   refinedChance: 0a0000005a000000
 --- !u!1001 &6506170865653749619
 PrefabInstance:

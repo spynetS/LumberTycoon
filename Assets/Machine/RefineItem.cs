@@ -35,6 +35,5 @@ namespace Mechine{
             
             return refinedItems[gameObjectsId[index]];
         }
-        
     }
 }
