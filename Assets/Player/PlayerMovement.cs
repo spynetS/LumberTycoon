@@ -44,13 +44,19 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;
         }
 
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
+        if (Input.GetKey(KeyCode.LeftShift)) {
             moveSpeed = 10;
-        }else
-        {
+        }else{
             moveSpeed = 5;
         }
+        
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+        }
+        else{
+            transform.localScale = new Vector3(1, 1, 1);
+        } 
 
         if (!Cursor.visible) {
             Cursor.lockState = CursorLockMode.Locked;
@@ -68,13 +74,6 @@ public class PlayerMovement : MonoBehaviour
         Vector3 movement = (transform.forward * verticalInput + transform.right * horizontalInput).normalized;
         rb.velocity = (movement * (moveSpeed * 50 * Time.fixedDeltaTime)) + new Vector3(0f, rb.velocity.y, 0f);
     }
-
-    private void Move()
-    {
-        transform.Translate(move_X, 0, 0);
-        transform.Translate(0, 0, move_Z);
-    }
-
     void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Ground"))
