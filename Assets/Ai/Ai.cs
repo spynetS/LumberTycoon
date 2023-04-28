@@ -13,7 +13,7 @@ public class Ai : MonoBehaviour
     public List<string> attackTriggers = new List<string>();
     public List<string> idleTriggers = new List<string>();
 
-    public int range = 0;
+    public float range = 0;
     
     public int state = 0; // 0 idle, 1 seek player, 2 attack
 
@@ -29,25 +29,30 @@ public class Ai : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (Vector3.Distance(transform.position, GameObject.FindWithTag("Player").transform.position) < range)
+        {
+            state = 2;
+        }
         if (state == 1)
         {
-            transform.LookAt(GameObject.FindWithTag("Player").transform.position);
-            transform.Rotate(0.0f, 90.0f, 0.0f, Space.Self); 
-            transform.position = Vector3.MoveTowards(transform.position,GameObject.FindWithTag("Player").transform.position, 0.1f);
+            transform.position = Vector3.MoveTowards(transform.position,GameObject.FindWithTag("Player").transform.position, 0.05f);
         }
         else if (state == 2)
         {
             animator.SetTrigger(getAttack());
         }
+        
+        print("rotatee");
+        transform.LookAt(GameObject.FindWithTag("Player").transform.position);
+        transform.Rotate(0.0f, 90.0f, 0.0f, Space.Self); 
     }
 
-    public void OnTriggerEnter(Collider other) {
+    public void OnTriggerStay(Collider other) {
         if (other.gameObject.CompareTag("Player"))
         {
             if (Vector3.Distance(transform.position, GameObject.FindWithTag("Player").transform.position) < range)
             {
                 state = 2;
-                print("TRIG");
             }
             else
             {

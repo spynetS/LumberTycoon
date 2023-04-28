@@ -45,6 +45,10 @@ namespace Player{
             if (other.GetComponent<DroppedItem>() != null)
                 inventory.add(other.gameObject);
 
+            if (other.gameObject.CompareTag("stone"))
+            {
+                transform.Translate(Vector3.up*10);
+            }
         }
         
         public void dropItem(GameObject ob)
