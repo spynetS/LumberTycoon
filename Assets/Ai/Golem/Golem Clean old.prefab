@@ -568,7 +568,7 @@ GameObject:
   - component: {fileID: 6675524698329380728}
   - component: {fileID: 6675524698329380730}
   m_Layer: 0
-  m_Name: Golem Clean
+  m_Name: Golem Clean old
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
