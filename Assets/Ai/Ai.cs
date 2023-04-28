@@ -29,11 +29,15 @@ public class Ai : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (Vector3.Distance(transform.position, GameObject.FindWithTag("Player").transform.position) < range)
+        {
+            state = 2;
+        }
         if (state == 1)
         {
             transform.LookAt(GameObject.FindWithTag("Player").transform.position);
             transform.Rotate(0.0f, 90.0f, 0.0f, Space.Self); 
-            transform.position = Vector3.MoveTowards(transform.position,GameObject.FindWithTag("Player").transform.position, 0.1f);
+            transform.position = Vector3.MoveTowards(transform.position,GameObject.FindWithTag("Player").transform.position, 0.05f);
         }
         else if (state == 2)
         {

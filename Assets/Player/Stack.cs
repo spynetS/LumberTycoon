@@ -5,7 +5,6 @@ namespace Player
 {
     [System.Serializable]
     public class Stack 
-
     {
         public int stackSize = 5;
         public List<GameObject> items = new List<GameObject>();
