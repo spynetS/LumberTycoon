@@ -406,7 +406,7 @@ MonoBehaviour:
   - kasta
   idleTriggers:
   - idle
-  range: 7
+  range: 9.8
   state: 0
 --- !u!1 &3760759432877329060
 GameObject:
@@ -418,6 +418,7 @@ GameObject:
   m_Component:
   - component: {fileID: 884845881345967182}
   - component: {fileID: 5434996770594913630}
+  - component: {fileID: 8322679966867370157}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -494,6 +495,19 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.06910065, y: 0.53945935, z: -0.14191423}
     m_Extent: {x: 0.42817044, y: 0.42817032, z: 0.39418435}
   m_DirtyAABB: 0
+--- !u!65 &8322679966867370157
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3760759432877329060}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.8412495, z: 1.9999994}
+  m_Center: {x: -0.2216708, y: 0.2617598, z: 1.2059716}
 --- !u!1 &4680412040422600478
 GameObject:
   m_ObjectHideFlags: 0

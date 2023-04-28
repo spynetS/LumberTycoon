@@ -3292,6 +3292,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Golem Kastar sten animation
       objectReference: {fileID: 0}
+    - target: {fileID: 3760759432877329060, guid: f952cb5270b5c2e419d60198c86d1062, type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 4050491117918297899, guid: f952cb5270b5c2e419d60198c86d1062, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3335,6 +3339,10 @@ PrefabInstance:
     - target: {fileID: 4050491117918297899, guid: f952cb5270b5c2e419d60198c86d1062, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8322679966867370157, guid: f952cb5270b5c2e419d60198c86d1062, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f952cb5270b5c2e419d60198c86d1062, type: 3}

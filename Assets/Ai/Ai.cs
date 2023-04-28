@@ -13,7 +13,7 @@ public class Ai : MonoBehaviour
     public List<string> attackTriggers = new List<string>();
     public List<string> idleTriggers = new List<string>();
 
-    public int range = 0;
+    public float range = 0;
     
     public int state = 0; // 0 idle, 1 seek player, 2 attack
 
