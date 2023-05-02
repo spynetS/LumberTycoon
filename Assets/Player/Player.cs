@@ -18,16 +18,16 @@ namespace Player{
 
         private void OnTriggerEnter(Collider other)
         {
-                if (other.GetComponent<Output>() != null)
+            if (other.GetComponent<Output>() != null)
+            {
+                Output o = other.GetComponent<Output>();
+                foreach (GameObject g in o.items)
                 {
-                    Output o = other.GetComponent<Output>();
-                    foreach (GameObject g in o.items)
-                    {
-                        Debug.Log(g);
-                        inventory.add(g);
-                    }
-                    o.items.Clear();
+                    Debug.Log(g);
+                    inventory.add(g);
                 }
+                o.items.Clear();
+            }
             try
             { 
                 if (other.GetComponent<Mechine.Input>() != null)

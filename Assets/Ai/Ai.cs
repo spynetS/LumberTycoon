@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Sockets;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering.UI;
@@ -14,6 +15,7 @@ public class Ai : MonoBehaviour
     public List<string> idleTriggers = new List<string>();
 
     public float range = 0;
+
     
     public int state = 0; // 0 idle, 1 seek player, 2 attack
 
@@ -33,6 +35,10 @@ public class Ai : MonoBehaviour
         {
             state = 2;
         }
+        else if(state == 2)
+        {
+            state = 1;
+        }
         if (state == 1)
         {
             transform.position = Vector3.MoveTowards(transform.position,GameObject.FindWithTag("Player").transform.position, 0.05f);
@@ -42,9 +48,14 @@ public class Ai : MonoBehaviour
             animator.SetTrigger(getAttack());
         }
         
-        print("rotatee");
+        Vector3 playerPos = GameObject.FindWithTag("Player").transform.position;
+        //print("rotatee");
+        //Vector3 newPos = transform.position - playerPos;
+        //float angle = Mathf.Atan2(newPos.z, newPos.x) * Mathf.Rad2Deg;
+        //print(angle);
+        //transform.rotation = Quaternion.Euler(0, Mathf.Lerp(transform.rotation.y, -angle, rotateSpeed) , 0);
         transform.LookAt(GameObject.FindWithTag("Player").transform.position);
-        transform.Rotate(0.0f, 90.0f, 0.0f, Space.Self); 
+        transform.Rotate(0.0f, 90.0f, 0.0f, Space.Self);  
     }
 
     public void OnTriggerStay(Collider other) {
