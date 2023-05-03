@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - stonedroped
   - stone
+  - hitbox
   layers:
   - Default
   - TransparentFX

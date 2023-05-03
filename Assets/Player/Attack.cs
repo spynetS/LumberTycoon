@@ -35,10 +35,10 @@ public class Attack : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {   
-        if(other.gameObject.GetComponent<Resource>() != null)
+        if(other.gameObject.GetComponentInParent<Resource>() != null && other.CompareTag("hitbox"))
             resourceInRange = other.gameObject;
         
-        if(other.gameObject.GetComponentInParent<Resource>() != null)
+        if(other.gameObject.GetComponentInParent<Resource>() != null && other.CompareTag("hitbox"))
             resourceInRange = other.gameObject.transform.parent.gameObject;
     }
 }
