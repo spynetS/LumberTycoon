@@ -28,7 +28,7 @@ public class Ai : MonoBehaviour
     {
         return idleTriggers[new Random().Next(0, idleTriggers.Count)];
     }
-
+    
     private void FixedUpdate()
     {
         if (Vector3.Distance(transform.position, GameObject.FindWithTag("Player").transform.position) < range)
@@ -47,15 +47,12 @@ public class Ai : MonoBehaviour
         {
             animator.SetTrigger(getAttack());
         }
-        
-        Vector3 playerPos = GameObject.FindWithTag("Player").transform.position;
-        //print("rotatee");
-        //Vector3 newPos = transform.position - playerPos;
-        //float angle = Mathf.Atan2(newPos.z, newPos.x) * Mathf.Rad2Deg;
-        //print(angle);
-        //transform.rotation = Quaternion.Euler(0, Mathf.Lerp(transform.rotation.y, -angle, rotateSpeed) , 0);
-        transform.LookAt(GameObject.FindWithTag("Player").transform.position);
-        transform.Rotate(0.0f, 90.0f, 0.0f, Space.Self);  
+        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Scene"))
+        {
+            transform.LookAt(GameObject.FindWithTag("Player").transform.position);
+            transform.Rotate(0.0f, 90.0f, 0.0f, Space.Self);  
+        }
+
     }
 
     public void OnTriggerStay(Collider other) {
