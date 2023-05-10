@@ -63,7 +63,6 @@ namespace Player
         {
             foreach (Stack stack in stacks)
             {
-                    Debug.Log(stack.items);
                 if (stack.getFirst().GetComponent<DroppedItem>().name == ob.GetComponent<DroppedItem>().name)
                 {
                     stack.items.Remove(ob);
