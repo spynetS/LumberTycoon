@@ -47,7 +47,19 @@ namespace Player{
 
             if (other.gameObject.CompareTag("stone"))
             {
-                transform.Translate(Vector3.up*10);
+                List<Stack> list = new List<Stack>();
+                foreach(Stack stack in inventory.stacks)
+                {
+                    if (!stack.drop(transform))
+                    {
+                        list.Add(stack);
+                    }
+                }
+
+                foreach (Stack stack in list)
+                {
+                    inventory.stacks.Remove(stack);
+                }
             }
         }
         
