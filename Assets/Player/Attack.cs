@@ -6,9 +6,9 @@ using UnityEngine;
 public class Attack : MonoBehaviour
 {
     public Tool tool;
-    public GameObject resourceInRange;
-    private int timer = 100000;
-    void Update()
+    public int timer = 100000;
+    public float hitdistance = 5;
+    void FixedUpdate()
     {
         if (!Cursor.visible && Input.GetMouseButtonDown(0)){ // if mouse is down
             tool.attackAnimation();
@@ -16,29 +16,15 @@ public class Attack : MonoBehaviour
         if (!Cursor.visible && Input.GetMouseButton(0)){ // if mouse is down 
             tool.attackAnimation();
             // if there is a resource in range and the timer is right 
-            if (resourceInRange != null && timer > tool.timeBetweenHits) 
+            RaycastHit hit;
+            // Does the ray intersect any objects excluding the player layer
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, hitdistance) && timer > tool.timeBetweenHits)
             {
-                
-                resourceInRange.GetComponent<Resource>().getDamage(tool);
-                Debug.Log(resourceInRange.GetComponent<Resource>());
-                 
+                hit.transform.GetComponentInParent<Resource>().getDamage(tool);
                 timer = 0;
             }
         }
         timer++;
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        resourceInRange = null;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {   
-        if(other.gameObject.GetComponentInParent<Resource>() != null && other.CompareTag("hitbox"))
-            resourceInRange = other.gameObject;
-        
-        if(other.gameObject.GetComponentInParent<Resource>() != null && other.CompareTag("hitbox"))
-            resourceInRange = other.gameObject.transform.parent.gameObject;
-    }
 }

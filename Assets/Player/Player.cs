@@ -14,7 +14,24 @@ namespace Player{
         public Inventory inventory;
         private void Update()
         {
+            if (isDead)
+            {
+                foreach(Stack stack in inventory.stacks)
+                {
+                    stack.dropAll(transform);
+                }
+
+                inventory.stacks.Clear();
+
+                if (inventory.stacks.Count == 0)
+                {
+                    isDead = false;
+                    transform.position = new Vector3(0, 10, 0);
+                }
+            }
         }
+
+        public bool isDead = false;
 
         private void OnTriggerEnter(Collider other)
         {
@@ -45,21 +62,9 @@ namespace Player{
             if (other.GetComponent<DroppedItem>() != null)
                 inventory.add(other.gameObject);
 
-            if (other.gameObject.CompareTag("stone"))
+            if (other.transform.tag == "stone")
             {
-                List<Stack> list = new List<Stack>();
-                foreach(Stack stack in inventory.stacks)
-                {
-                    if (!stack.drop(transform))
-                    {
-                        list.Add(stack);
-                    }
-                }
-
-                foreach (Stack stack in list)
-                {
-                    inventory.stacks.Remove(stack);
-                }
+                isDead = true;
             }
         }
         
