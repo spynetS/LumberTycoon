@@ -46,15 +46,25 @@ namespace Player{
                 o.items.Clear();
             }
             try
-            { 
+            {
                 if (other.GetComponent<Mechine.Input>() != null)
                 {
                     GameObject o = inventory.getResorceItem();
-                    // if the item is refineable
+                        // if the item is refineable
                     if (o.GetComponent<RefineItem>() != null)
                     {
-                        other.GetComponent<Mechine.Input>().getItem(o);
-                        inventory.remove(o);
+                        int i = 0;
+                        while (i < 1000)
+                        {
+                            if (o != null)
+                            {
+                                other.GetComponent<Mechine.Input>().getItem(o);
+                                inventory.remove(o);
+                                
+                            }
+                            i++;
+                            o = inventory.getResorceItem();
+                        }
                     }
                 }
             } catch{}
