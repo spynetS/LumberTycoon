@@ -12,7 +12,7 @@ namespace Player
 
         public bool drop(Transform transform)
         {
-            if (items.Count < 1)
+            if (items.Count == 0)
             {
                 return false;
             }
@@ -29,5 +29,13 @@ namespace Player
             return items.Count > 0 ? items[0] : null;
         }
 
+        public void dropAll(Transform transform)
+        {
+            while (items.Count > 0)
+            {
+                drop(transform);
+            }
+
+        }
     }
 }
