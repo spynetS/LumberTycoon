@@ -5327,21 +5327,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5453991819282381451, guid: f5a476d36c76c0e4c83780e65b92bfa7, type: 3}
-      propertyPath: timeBetweenHits
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5492915814984661613, guid: f5a476d36c76c0e4c83780e65b92bfa7, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6028381172665335505, guid: f5a476d36c76c0e4c83780e65b92bfa7, type: 3}
       propertyPath: m_Name
       value: player
-      objectReference: {fileID: 0}
-    - target: {fileID: 6028381172665335508, guid: f5a476d36c76c0e4c83780e65b92bfa7, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6028381172665335510, guid: f5a476d36c76c0e4c83780e65b92bfa7, type: 3}
       propertyPath: m_RootOrder
@@ -5387,46 +5375,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6028381173036324963, guid: f5a476d36c76c0e4c83780e65b92bfa7, type: 3}
-      propertyPath: orthographic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6028381173036324965, guid: f5a476d36c76c0e4c83780e65b92bfa7, type: 3}
-      propertyPath: m_StopNaN
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6028381173036324965, guid: f5a476d36c76c0e4c83780e65b92bfa7, type: 3}
-      propertyPath: m_Dithering
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6028381173036324965, guid: f5a476d36c76c0e4c83780e65b92bfa7, type: 3}
-      propertyPath: m_Antialiasing
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6028381173036324965, guid: f5a476d36c76c0e4c83780e65b92bfa7, type: 3}
-      propertyPath: m_RenderShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6028381173036324965, guid: f5a476d36c76c0e4c83780e65b92bfa7, type: 3}
-      propertyPath: m_AntialiasingQuality
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6028381173036324965, guid: f5a476d36c76c0e4c83780e65b92bfa7, type: 3}
-      propertyPath: m_RenderPostProcessing
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6028381173125923195, guid: f5a476d36c76c0e4c83780e65b92bfa7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6874873943309588556, guid: f5a476d36c76c0e4c83780e65b92bfa7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6998326516108886859, guid: f5a476d36c76c0e4c83780e65b92bfa7, type: 3}
-      propertyPath: timeBetweenHits
-      value: 10
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6028381174021402272, guid: f5a476d36c76c0e4c83780e65b92bfa7, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5a476d36c76c0e4c83780e65b92bfa7, type: 3}

@@ -458,7 +458,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6028381172665335505}
-  m_LocalRotation: {x: -0, y: -0.98242086, z: -0, w: 0.18667966}
+  m_LocalRotation: {x: 0, y: -0.98242116, z: 0, w: 0.18667842}
   m_LocalPosition: {x: -10.8, y: 1.57, z: 0.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
@@ -582,6 +582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 0}
   inventory: {fileID: 6028381172665335515}
+  isDead: 0
 --- !u!136 &6028381172665335514
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1631,8 +1632,8 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 2
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -4429,7 +4430,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6028381174021402302}
   - component: {fileID: 6028381174021402303}
-  - component: {fileID: 6028381174021402272}
   - component: {fileID: 6028381174021402273}
   m_Layer: 0
   m_Name: holder
@@ -4468,20 +4468,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tool: {fileID: 6998326516108886859}
-  resourceInRange: {fileID: 0}
---- !u!135 &6028381174021402272
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6028381174021402301}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 3.96
-  m_Center: {x: -0.5, y: -0.83, z: 1.48}
+  timer: 100000
+  hitdistance: 5
 --- !u!114 &6028381174021402273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5210,13 +5198,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6028381174021402302}
     m_Modifications:
+    - target: {fileID: 5592044544728585484, guid: 5736b27db3fb62849abefc0994211662, type: 3}
+      propertyPath: timeBetweenHits
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8353499377392012811, guid: 5736b27db3fb62849abefc0994211662, type: 3}
       propertyPath: m_Name
       value: Pickaxe
       objectReference: {fileID: 0}
     - target: {fileID: 8353499377392012811, guid: 5736b27db3fb62849abefc0994211662, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8693715022093063345, guid: 5736b27db3fb62849abefc0994211662, type: 3}
       propertyPath: m_RootOrder
@@ -5299,6 +5291,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 5453991819282381448}
+    - target: {fileID: 801584693340597809, guid: bbabbe70d0732b44e940a15b6df22d1e, type: 3}
+      propertyPath: timeBetweenHits
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 906758947699666647, guid: bbabbe70d0732b44e940a15b6df22d1e, type: 3}
       propertyPath: m_RootOrder
       value: 1
