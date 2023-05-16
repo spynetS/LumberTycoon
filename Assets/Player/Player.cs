@@ -12,6 +12,7 @@ namespace Player{
     {
         public TMP_Text mytext;
         public Inventory inventory;
+        public PlayerMovement playerMovement;
         private void Update()
         {
             if (isDead)
