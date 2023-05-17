@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7144124597652196585}
   - component: {fileID: 8459976032828386973}
   - component: {fileID: 6695772139285782535}
+  - component: {fileID: 7368128881071855236}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7368128881071855236
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983642253790320856}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2534964839176971238, guid: 7b561692ac376fd2a873e1dd61f5b048, type: 3}
 --- !u!1 &3737665686369643401
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,6 +107,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4077177746991280435}
+  - component: {fileID: -7936041472401111246}
+  - component: {fileID: 3076206092341856707}
   m_Layer: 0
   m_Name: BigTree_green
   m_TagString: Untagged
@@ -116,6 +133,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &-7936041472401111246
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3737665686369643401}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bf3fcef4417b64aa1b1354ba74f617eb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3076206092341856707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3737665686369643401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85f900123f95cb55aace8f3be4933239, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 200
+  dropMin: 4
+  dropMax: 10
+  dropers:
+  - {fileID: 6084338743795345005, guid: d1a22ebf4263fa93a85e7ef66b8093ca, type: 3}
+  animator: {fileID: -7936041472401111246}
+  workingTools:
+  - axe
 --- !u!1 &8801833486165639482
 GameObject:
   m_ObjectHideFlags: 0

@@ -92,6 +92,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5685626663325062405}
+  - component: {fileID: -5291758722222082026}
+  - component: {fileID: -3676184576038965510}
   m_Layer: 0
   m_Name: BigTree_red
   m_TagString: Untagged
@@ -116,6 +118,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &-5291758722222082026
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5020589990494244799}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bf3fcef4417b64aa1b1354ba74f617eb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-3676184576038965510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5020589990494244799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85f900123f95cb55aace8f3be4933239, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 200
+  dropMin: 4
+  dropMax: 10
+  dropers:
+  - {fileID: 6084338743795345005, guid: d1a22ebf4263fa93a85e7ef66b8093ca, type: 3}
+  animator: {fileID: -5291758722222082026}
+  workingTools:
+  - axe
 --- !u!1 &8923026930543672558
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,6 +170,7 @@ GameObject:
   - component: {fileID: 1537816153869560031}
   - component: {fileID: 222281383144180395}
   - component: {fileID: 3070968499823576113}
+  - component: {fileID: 5249527900646213177}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -199,3 +243,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5249527900646213177
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8923026930543672558}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2534964839176971238, guid: 7b561692ac376fd2a873e1dd61f5b048, type: 3}

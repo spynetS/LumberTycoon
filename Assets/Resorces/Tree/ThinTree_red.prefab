@@ -166,12 +166,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f900123f95cb55aace8f3be4933239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 50
   dropMin: 1
-  dropMax: 4
-  dropers: []
+  dropMax: 3
+  dropers:
+  - {fileID: 6084338743795345005, guid: d1a22ebf4263fa93a85e7ef66b8093ca, type: 3}
   animator: {fileID: 3384702859298584073}
-  workingTools: []
+  workingTools:
+  - axe
 --- !u!1 &8735963991982350109
 GameObject:
   m_ObjectHideFlags: 0
