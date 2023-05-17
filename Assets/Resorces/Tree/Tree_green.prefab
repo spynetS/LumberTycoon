@@ -185,6 +185,7 @@ GameObject:
   - component: {fileID: 1667974833879439939}
   - component: {fileID: 8637428966646481052}
   - component: {fileID: 1846956488772372165}
+  - component: {fileID: 6083662466232100308}
   m_Layer: 0
   m_Name: Plane.1516
   m_TagString: Untagged
@@ -235,7 +236,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4bebcdd369cee534aa5413413f91bf7c, type: 2}
+  - {fileID: 2100000, guid: c346a7898932ac34884f7948fb40ba70, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -257,3 +258,23 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!205 &6083662466232100308
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7900812920290760726}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.02974765, y: 0.008368164, z: 0.003182143}
+  m_Size: 0.29076564
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.095623605
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 0}
+    - renderer: {fileID: 1846956488772372165}
+  m_Enabled: 1
