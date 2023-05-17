@@ -9,6 +9,7 @@ TagManager:
   - stonedroped
   - stone
   - hitbox
+  - Machine
   layers:
   - Default
   - TransparentFX

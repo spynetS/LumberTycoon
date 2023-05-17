@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 15f;
+    public float runSpeed = 10;
+    public float walkSpeed = 5;
+    private float moveSpeed = 15f;
     public float jumpForce = 10f;
     public float lookSensitivity = 3f;
 
@@ -45,9 +47,9 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if (Input.GetKey(KeyCode.LeftShift)) {
-            moveSpeed = 10;
+            moveSpeed = runSpeed;
         }else{
-            moveSpeed = 5;
+            moveSpeed = walkSpeed;
         }
         
         if (Input.GetKey(KeyCode.LeftControl))

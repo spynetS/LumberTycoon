@@ -13,8 +13,10 @@ namespace Player{
         public TMP_Text mytext;
         public Inventory inventory;
         public PlayerMovement playerMovement;
+        public float money = 10;
         private void Update()
         {
+            mytext.text = money.ToString();
             if (isDead)
             {
                 foreach(Stack stack in inventory.stacks)
