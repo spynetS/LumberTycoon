@@ -5579,7 +5579,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1026666855429066377, guid: f267a32c0d99f824ab0ced7073dc9099, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1026666855429066377, guid: f267a32c0d99f824ab0ced7073dc9099, type: 3}
       propertyPath: m_DynamicOccludee
