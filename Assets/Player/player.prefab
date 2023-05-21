@@ -5768,7 +5768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 50
-  timeBetweenHits: 100
+  timeBetweenHits: 10
   name: axe
   animator: {fileID: 1023092972}
 --- !u!4 &8995519352467646511 stripped
