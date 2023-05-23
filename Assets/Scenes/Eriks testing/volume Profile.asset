@@ -46,9 +46,9 @@ MonoBehaviour:
     m_Value: 2
   intensity:
     m_OverrideState: 1
-    m_Value: 0.277
+    m_Value: 0.326
   clamp:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.05
 --- !u!114 &-4014686383076177174
 MonoBehaviour:
@@ -65,13 +65,13 @@ MonoBehaviour:
   active: 1
   shadows:
     m_OverrideState: 1
-    m_Value: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
+    m_Value: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
   highlights:
     m_OverrideState: 1
-    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    m_Value: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 1}
   balance:
     m_OverrideState: 1
-    m_Value: -26
+    m_Value: 18
 --- !u!114 &-3465303159439559576
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -87,7 +87,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0.127
+    m_Value: 0.198
 --- !u!114 &-1625427118731289509
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -152,23 +152,23 @@ MonoBehaviour:
     m_Value: 0.7
   clamp:
     m_OverrideState: 1
-    m_Value: 65466.8
+    m_Value: 65467.72
   tint:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 0.72671366, b: 0, a: 1}
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
   highQualityFiltering:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   skipIterations:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 6
   dirtTexture:
     m_OverrideState: 0
     m_Value: {fileID: 0}
     dimension: 1
   dirtIntensity:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 1974
 --- !u!114 &-1082270602808239334
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -202,8 +202,8 @@ MonoBehaviour:
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.32439023
-          value: 0.38974357
+          time: 0.29722923
+          value: 0.37765956
           inSlope: 1
           outSlope: 1
           tangentMode: 0
@@ -412,7 +412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 899c54efeace73346a0a16faa3afe726, type: 3}
   m_Name: Vignette
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   color:
     m_OverrideState: 1
     m_Value: {r: 0, g: 0, b: 0, a: 1}
@@ -455,7 +455,7 @@ MonoBehaviour:
     m_Value: 0
   saturation:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 100
 --- !u!114 &7676395413929742053
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -471,10 +471,10 @@ MonoBehaviour:
   active: 1
   temperature:
     m_OverrideState: 1
-    m_Value: 10
+    m_Value: -15
   tint:
     m_OverrideState: 1
-    m_Value: -23
+    m_Value: -24
 --- !u!114 &8368784136215289751
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -487,7 +487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
   m_Name: Tonemapping
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   mode:
     m_OverrideState: 1
     m_Value: 2
