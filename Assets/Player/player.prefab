@@ -4449,9 +4449,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6028381174021402301}
-  m_LocalRotation: {x: 0.07947401, y: -0, z: -0, w: 0.996837}
-  m_LocalPosition: {x: 0.218, y: 0.404, z: 0.452}
-  m_LocalScale: {x: 0.2558732, y: 0.2558732, z: 0.2558732}
+  m_LocalRotation: {x: 0.079474024, y: 9.324364e-13, z: 9.31322e-10, w: 0.996837}
+  m_LocalPosition: {x: 0.21799967, y: 0.40399995, z: 0.45200008}
+  m_LocalScale: {x: 0.2558732, y: 0.2558733, z: 0.25587326}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1667171856554005586}
@@ -4499,7 +4499,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6028381174021402301}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 44c8b4e718e464d15b88633d1b857a4b, type: 2}
   m_CullingMode: 0
@@ -5401,6 +5401,33 @@ MonoBehaviour:
   timeBetweenHits: 10
   name: pickaxe
   animator: {fileID: 1023092972}
+--- !u!114 &8751592313366511955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047215149351063272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51af97357923420490ff1bc3afc1c7d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6505064362654409098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047215149351063272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c13f529a0ff4c44b6b9c5f240602f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: 1
+  maxamount: 1
+  smooth: 0
 --- !u!1001 &4661143845998859450
 PrefabInstance:
   m_ObjectHideFlags: 0
