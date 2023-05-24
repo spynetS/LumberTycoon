@@ -9,7 +9,11 @@ TagManager:
   - stonedroped
   - stone
   - hitbox
+<<<<<<< HEAD
   - Machine
+=======
+  - Buy
+>>>>>>> dd00027b3bd833d6934bc339ea3858995d8afcd9
   layers:
   - Default
   - TransparentFX
