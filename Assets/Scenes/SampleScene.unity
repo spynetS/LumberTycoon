@@ -4142,6 +4142,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1314216602}
   m_CullTransparentMesh: 1
+--- !u!4 &1339314261 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6028381173036324964, guid: f5a476d36c76c0e4c83780e65b92bfa7, type: 3}
+  m_PrefabInstance: {fileID: 6028381172341585168}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1359746180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7089,6 +7094,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Golem Kastar sten animation
       objectReference: {fileID: 0}
+    - target: {fileID: 3710381816404067729, guid: f952cb5270b5c2e419d60198c86d1062, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4050491117918297899, guid: f952cb5270b5c2e419d60198c86d1062, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -7227,6 +7236,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.36700073
       objectReference: {fileID: 0}
+    - target: {fileID: 6028381174021402303, guid: f5a476d36c76c0e4c83780e65b92bfa7, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1339314261}
     - target: {fileID: 6298251291607420912, guid: f5a476d36c76c0e4c83780e65b92bfa7, type: 3}
       propertyPath: weapon
       value: 

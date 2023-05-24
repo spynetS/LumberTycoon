@@ -23,8 +23,11 @@ public class Attack : MonoBehaviour
             if (Physics.Raycast(camera.position, camera.TransformDirection(Vector3.forward), out hit, hitdistance) && timer > tool.timeBetweenHits)
             {
                 Debug.Log(hit.transform.tag);
-                hit.transform.GetComponentInParent<Resource>().getDamage(tool);
-                timer = 0;
+                if (hit.transform.tag != "Player")
+                {
+                    hit.transform.GetComponentInParent<Resource>().getDamage(tool);
+                    timer = 0;
+                }
             }
         }
         timer++;
