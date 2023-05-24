@@ -1,0 +1,74 @@
+.container {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.inventory {
+    flex-grow: 1;
+    width: 40%;
+    height: 75%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: rgb(27, 28, 29);
+    border-top-color: rgb(202, 33, 0);
+    max-height: 75%;
+    max-width: 40%;
+    border-bottom-width: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top-width: 10px;
+}
+
+.header {
+    font-size: 24px;
+    -unity-font-style: bold;
+    color: rgb(255, 105, 90);
+    margin-bottom: 10px;
+    border-bottom-color: rgb(255, 105, 90);
+    height: 39px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 3px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    margin-top: 2px;
+}
+
+.slotHolder {
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 500px;
+}
+
+.slotContainer
+{
+    width: 128px;
+    height: 128px;
+    margin: 5px;
+    border-left-color: rgb(48,48,48);
+    border-right-color: rgb(48,48,48);
+    border-top-color: rgb(48,48,48);
+    border-bottom-color: rgb(48,48,48);
+    background-color: rgb(9,19,21);
+    background-image: url('/Assets/Sprites/ItemSlotBackground.png');
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.slotIcon
+{
+    padding: 15px;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
