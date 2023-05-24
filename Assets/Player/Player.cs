@@ -13,7 +13,7 @@ namespace Player{
         public TMP_Text mytext;
         public Inventory inventory;
         public PlayerMovement playerMovement;
-        public float money = 10;
+        public float money = 10000;
         private void Update()
         {
             mytext.text = money.ToString();
