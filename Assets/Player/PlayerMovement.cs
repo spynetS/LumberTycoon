@@ -86,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
-            audioSource.PlayOneShot(footstep, volume);
+            playerAudio.PlayOneShot(footstep, volume);
         }
     }
 }

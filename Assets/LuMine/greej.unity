@@ -747,7 +747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PanelSettings: {fileID: 11400000, guid: 0a79709d1cf98594b85abeb17994be43, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: ba34d75d84622a046afc63fe36b1f07a, type: 3}
   m_SortingOrder: 0
 --- !u!4 &464214239
 Transform:
@@ -2115,7 +2115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2145038782
 RectTransform:
   m_ObjectHideFlags: 0
