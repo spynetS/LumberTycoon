@@ -1151,6 +1151,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1.41
       objectReference: {fileID: 0}
+    - target: {fileID: 7048364512164806331, guid: bbb55b9fddd6a717a8d9bb3f03bec981, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb55b9fddd6a717a8d9bb3f03bec981, type: 3}
 --- !u!1 &29641931 stripped
@@ -8189,20 +8193,32 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8423468349543832957, guid: 9247a1d8817ea784da29699330706831, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.083887465
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423468349543832957, guid: 9247a1d8817ea784da29699330706831, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.083887465
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423468349543832957, guid: 9247a1d8817ea784da29699330706831, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.083887465
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423468349543832957, guid: 9247a1d8817ea784da29699330706831, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 669.41
+      value: 688.557
       objectReference: {fileID: 0}
     - target: {fileID: 8423468349543832957, guid: 9247a1d8817ea784da29699330706831, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.247379
+      value: 11.003004
       objectReference: {fileID: 0}
     - target: {fileID: 8423468349543832957, guid: 9247a1d8817ea784da29699330706831, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 437.76
+      value: 417.659
       objectReference: {fileID: 0}
     - target: {fileID: 8423468349543832957, guid: 9247a1d8817ea784da29699330706831, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.07815413
+      value: 0.9320997
       objectReference: {fileID: 0}
     - target: {fileID: 8423468349543832957, guid: 9247a1d8817ea784da29699330706831, type: 3}
       propertyPath: m_LocalRotation.x
@@ -8210,7 +8226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8423468349543832957, guid: 9247a1d8817ea784da29699330706831, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.9969413
+      value: -0.3622018
       objectReference: {fileID: 0}
     - target: {fileID: 8423468349543832957, guid: 9247a1d8817ea784da29699330706831, type: 3}
       propertyPath: m_LocalRotation.z
@@ -8222,7 +8238,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8423468349543832957, guid: 9247a1d8817ea784da29699330706831, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -188.965
+      value: -42.471
       objectReference: {fileID: 0}
     - target: {fileID: 8423468349543832957, guid: 9247a1d8817ea784da29699330706831, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -11515,7 +11531,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 4.5
+  m_Intensity: 4.13
   m_Range: 2.2
   m_SpotAngle: 179
   m_InnerSpotAngle: 89.31723
@@ -21608,7 +21624,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 35.1
+  m_Intensity: 18.74
   m_Range: 3
   m_SpotAngle: 179
   m_InnerSpotAngle: 89.31723
@@ -30735,7 +30751,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 4.5
+  m_Intensity: 4.13
   m_Range: 2.2
   m_SpotAngle: 179
   m_InnerSpotAngle: 89.31723
@@ -40444,7 +40460,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 4.5
+  m_Intensity: 4.13
   m_Range: 2.2
   m_SpotAngle: 179
   m_InnerSpotAngle: 89.31723
@@ -57355,7 +57371,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 4.5
+  m_Intensity: 4.13
   m_Range: 2.2
   m_SpotAngle: 179
   m_InnerSpotAngle: 89.31723
@@ -62550,7 +62566,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 4.5
+  m_Intensity: 4.13
   m_Range: 2.2
   m_SpotAngle: 179
   m_InnerSpotAngle: 89.31723

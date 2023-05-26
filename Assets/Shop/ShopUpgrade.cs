@@ -39,6 +39,7 @@ public class ShopUpgrade : MonoBehaviour
         if (buy(amount))
         {
             machine.refiner.GetComponent<Refiner>().timeBetweenUpdates -= 5;
+            machine.turnOnRoundThing();
         }
     }
     // "1;100"  first part secound money

@@ -17,6 +17,7 @@ namespace Player
         {
             {"wooddroped",10},
             {"stonedroped",5},
+            {"saphire",5},
             
         };
 
@@ -41,7 +42,7 @@ namespace Player
             {
                 Stack s = new Stack();
                 s.items.Add(ob);
-                s.stackSize = balleKlaa[ob.tag];
+                s.stackSize = balleKlaa[ob.GetComponent<DroppedItem>().name];
                 
                 ob.SetActive(false);
 
