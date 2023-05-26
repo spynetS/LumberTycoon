@@ -9,6 +9,17 @@ public class Attack : MonoBehaviour
     public int timer = 100000;
     public float hitdistance = 5;
     public Transform camera;
+    
+    [Header("Sound")]
+    private AudioSource weaponAudio;
+    public float volume;
+    public AudioClip hitSound;
+    
+    void Start() 
+    {
+        weaponAudio = GetComponent<AudioSource>();
+    }
+    
     void FixedUpdate()
     {
         if (!Cursor.visible && Input.GetMouseButtonDown(0)){ // if mouse is down
@@ -27,6 +38,8 @@ public class Attack : MonoBehaviour
                 {
                     hit.transform.GetComponentInParent<Resource>().getDamage(tool);
                     timer = 0;
+                    
+                    weaponAudio.PlayOneShot(hitSound, volume);
                 }
             }
         }
