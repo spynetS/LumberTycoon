@@ -10,8 +10,9 @@ public class Attack : MonoBehaviour
     public float hitdistance = 5;
     public Transform camera;
     
+    [Header("Sound")]
     private AudioSource weaponAudio;
-    private float volume;
+    public float volume;
     public AudioClip hitSound;
     
     void Start() 
