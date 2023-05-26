@@ -6,10 +6,10 @@
                 <ui:Label text="Inventory" display-tooltip-when-elided="true" />
             </ui:VisualElement>
             <ui:VisualElement class="slotHolder">
-                <ui:VisualElement name="Slot" class="slotContainer" style="background-color: rgba(9, 19, 21, 0); position: absolute; left: 0; top: 0;" />
-                <ui:VisualElement name="Slot" class="slotContainer" style="background-color: rgba(9, 19, 21, 0); position: absolute; left: 33%; top: 0;" />
-                <ui:VisualElement name="Slot" class="slotContainer" style="background-color: rgba(9, 19, 21, 0); position: absolute; left: 66%; top: 0;" />
-                <ui:VisualElement name="Slot" class="slotContainer" style="background-color: rgba(9, 19, 21, 0); position: absolute; left: 0; top: 33%;" />
+                <ui:VisualElement name="Slot" class="slotContainer" style="background-color: rgba(9, 19, 21, 0); position: absolute; left: 0; top: 0; background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;);" />
+                <ui:VisualElement name="Slot" class="slotContainer" style="background-color: rgba(9, 19, 21, 0); position: absolute; left: 33%; top: 0; background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;);" />
+                <ui:VisualElement name="Slot" class="slotContainer" style="background-color: rgba(9, 19, 21, 0); position: absolute; left: 66%; top: 0; background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;);" />
+                <ui:VisualElement name="Slot" class="slotContainer" style="background-color: rgba(9, 19, 21, 0); position: absolute; left: 0; top: 33%; background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;);" />
                 <ui:VisualElement name="Slot" class="slotContainer" style="background-color: rgba(9, 19, 21, 0); position: absolute; left: 33%; top: 33%;" />
                 <ui:VisualElement name="Slot" class="slotContainer" style="background-color: rgba(9, 19, 21, 0); position: absolute; left: 66%; top: 33%;" />
                 <ui:VisualElement name="Slot" class="slotContainer" style="background-color: rgba(9, 19, 21, 0); position: absolute; left: 0; top: 66%;" />
