@@ -10,8 +10,9 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 10f;
     public float lookSensitivity = 3f;
     
+    [Header("Sound)]
     private AudioSource playerAudio;
-    private float volume;
+    public float volume;
     public AudioClip footstep;
 
     [SerializeField] private bool isGrounded;
