@@ -9,6 +9,10 @@ public class PlayerMovement : MonoBehaviour
     private float moveSpeed = 15f;
     public float jumpForce = 10f;
     public float lookSensitivity = 3f;
+    
+    private AudioSource playerAudio;
+    private float volume;
+    public AudioClip footstep;
 
     [SerializeField] private bool isGrounded;
     
@@ -22,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         playerCamera = GetComponentInChildren<Camera>();
+        playerAudio = GetComponent<AudioSource>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -81,6 +86,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+            audioSource.PlayOneShot(footstep, volume);
         }
     }
 }
