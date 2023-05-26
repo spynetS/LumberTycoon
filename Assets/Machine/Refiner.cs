@@ -11,7 +11,7 @@ namespace Mechine{
         [Header("Sound")]
         private AudioSource machineAudio;
         public float volume;
-        public audioClip factory;
+        public AudioClip factory;
         
         public override void updateMechine()
         {

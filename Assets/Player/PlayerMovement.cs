@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 10f;
     public float lookSensitivity = 3f;
     
-    [Header("Sound)]
+    [Header("Sound")]
     private AudioSource playerAudio;
     public float volume;
     public AudioClip footstep;
