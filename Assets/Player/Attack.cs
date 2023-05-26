@@ -12,7 +12,7 @@ public class Attack : MonoBehaviour
     
     private AudioSource weaponAudio;
     private float volume;
-    public audioClip hitSound;
+    public AudioClip hitSound;
     
     void Start() 
     {
@@ -38,7 +38,7 @@ public class Attack : MonoBehaviour
                     hit.transform.GetComponentInParent<Resource>().getDamage(tool);
                     timer = 0;
                     
-                    audioSource.PlayOneShot(clip, volume);
+                    weaponAudio.PlayOneShot(hitSound, volume);
                 }
             }
         }
