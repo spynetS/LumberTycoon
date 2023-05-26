@@ -8,8 +8,9 @@ namespace Mechine{
     {
         public TMP_Text mytext;
         
+        [Header("Sound")]
         private AudioSource machineAudio;
-        private float volume;
+        public float volume;
         public audioClip factory;
         
         public override void updateMechine()
