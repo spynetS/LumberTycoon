@@ -22,7 +22,7 @@ namespace Player
         };
 
         public int stackSize = 3;
-        
+
         public void add(GameObject ob)
         {
             foreach (Stack stack in stacks)

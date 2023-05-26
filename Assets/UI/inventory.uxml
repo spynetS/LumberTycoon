@@ -1,38 +1,20 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/LuMine/Inventory.uss?fileID=7433441132597879392&amp;guid=0f526111887afdd47b805150405867ec&amp;type=3#Inventory" />
-    <ui:VisualElement name="Container" class="container">
-        <ui:VisualElement name="Inventory" class="inventory" style="width: 500px; height: 75px; max-width: 134%;">
+    <ui:VisualElement name="Container" class="container" style="display: none;">
+        <ui:VisualElement name="Inventory" class="inventory" style="width: 500px; height: 75px; max-width: 134%; opacity: 1; display: flex; visibility: visible;">
             <ui:VisualElement name="Header" class="header">
                 <ui:Label text="Inventory" display-tooltip-when-elided="true" />
             </ui:VisualElement>
             <ui:VisualElement name="list" class="slotHolder">
-                <ui:VisualElement name="Slot" class="slotContainer" style="background-color: rgba(9, 19, 21, 0); position: relative; left: 0; top: -1px; background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;); align-items: auto; width: 120px; height: 120px;">
-                    <ui:Label text="1" display-tooltip-when-elided="true" name="label" style="height: 117px; -unity-text-align: lower-left; width: 42px; white-space: nowrap; align-items: flex-end;" />
-                </ui:VisualElement>
-                <ui:VisualElement name="Slot" class="slotContainer" style="background-color: rgba(9, 19, 21, 0); position: relative; left: 0; top: -1px; background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;); align-items: auto; width: 120px; height: 120px;">
-                    <ui:Label text="1" display-tooltip-when-elided="true" name="label" style="height: 117px; -unity-text-align: lower-left; width: 42px; white-space: nowrap; align-items: flex-end;" />
-                </ui:VisualElement>
-                <ui:VisualElement name="Slot" class="slotContainer" style="background-color: rgba(9, 19, 21, 0); position: relative; left: 0; top: -1px; background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;); align-items: auto; width: 120px; height: 120px;">
-                    <ui:Label text="1" display-tooltip-when-elided="true" name="label" style="height: 117px; -unity-text-align: lower-left; width: 42px; white-space: nowrap; align-items: flex-end;" />
-                </ui:VisualElement>
-                <ui:VisualElement name="Slot" class="slotContainer" style="background-color: rgba(9, 19, 21, 0); position: relative; left: 0; top: -1px; background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;); align-items: auto; width: 120px; height: 120px;">
-                    <ui:Label text="1" display-tooltip-when-elided="true" name="label" style="height: 117px; -unity-text-align: lower-left; width: 42px; white-space: nowrap; align-items: flex-end;" />
-                </ui:VisualElement>
-                <ui:VisualElement name="Slot" class="slotContainer" style="background-color: rgba(9, 19, 21, 0); position: relative; left: 0; top: -1px; background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;); align-items: auto; width: 120px; height: 120px;">
-                    <ui:Label text="1" display-tooltip-when-elided="true" name="label" style="height: 117px; -unity-text-align: lower-left; width: 42px; white-space: nowrap; align-items: flex-end;" />
-                </ui:VisualElement>
-                <ui:VisualElement name="Slot" class="slotContainer" style="background-color: rgba(9, 19, 21, 0); position: relative; left: 0; top: -1px; background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;); align-items: auto; width: 120px; height: 120px;">
-                    <ui:Label text="1" display-tooltip-when-elided="true" name="label" style="height: 117px; -unity-text-align: lower-left; width: 42px; white-space: nowrap; align-items: flex-end;" />
-                </ui:VisualElement>
-                <ui:VisualElement name="Slot" class="slotContainer" style="background-color: rgba(9, 19, 21, 0); position: relative; left: 0; top: -1px; background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;); align-items: auto; width: 120px; height: 120px;">
-                    <ui:Label text="1" display-tooltip-when-elided="true" name="label" style="height: 117px; -unity-text-align: lower-left; width: 42px; white-space: nowrap; align-items: flex-end;" />
-                </ui:VisualElement>
-                <ui:VisualElement name="Slot" class="slotContainer" style="background-color: rgba(9, 19, 21, 0); position: relative; left: 0; top: -1px; background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;); align-items: auto; width: 120px; height: 120px;">
-                    <ui:Label text="1" display-tooltip-when-elided="true" name="label" style="height: 117px; -unity-text-align: lower-left; width: 42px; white-space: nowrap; align-items: flex-end;" />
-                </ui:VisualElement>
-                <ui:VisualElement name="Slot" class="slotContainer" style="background-color: rgba(9, 19, 21, 0); position: relative; left: 0; top: -1px; background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;); align-items: auto; width: 120px; height: 120px;">
-                    <ui:Label text="1" display-tooltip-when-elided="true" name="label" style="height: 117px; -unity-text-align: lower-left; width: 42px; white-space: nowrap; align-items: flex-end;" />
-                </ui:VisualElement>
+                <ui:Button text="Button" display-tooltip-when-elided="true" style="background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;); background-color: rgba(255, 255, 255, 0); -unity-text-align: lower-right; width: 120px; height: 120px;" />
+                <ui:Button text="Button" display-tooltip-when-elided="true" style="background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;); background-color: rgba(255, 255, 255, 0); -unity-text-align: lower-right; width: 120px; height: 120px;" />
+                <ui:Button text="Button" display-tooltip-when-elided="true" style="background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;); background-color: rgba(255, 255, 255, 0); -unity-text-align: lower-right; width: 120px; height: 120px;" />
+                <ui:Button text="Button" display-tooltip-when-elided="true" style="background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;); background-color: rgba(255, 255, 255, 0); -unity-text-align: lower-right; width: 120px; height: 120px;" />
+                <ui:Button text="Button" display-tooltip-when-elided="true" style="background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;); background-color: rgba(255, 255, 255, 0); -unity-text-align: lower-right; width: 120px; height: 120px;" />
+                <ui:Button text="Button" display-tooltip-when-elided="true" style="background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;); background-color: rgba(255, 255, 255, 0); -unity-text-align: lower-right; width: 120px; height: 120px;" />
+                <ui:Button text="Button" display-tooltip-when-elided="true" style="background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;); background-color: rgba(255, 255, 255, 0); -unity-text-align: lower-right; width: 120px; height: 120px;" />
+                <ui:Button text="Button" display-tooltip-when-elided="true" style="background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;); background-color: rgba(255, 255, 255, 0); -unity-text-align: lower-right; width: 120px; height: 120px;" />
+                <ui:Button text="Button" display-tooltip-when-elided="true" style="background-image: url(&apos;project://database/Assets/UI/ItemSlotBackground.png?fileID=2800000&amp;guid=e8b38a1c61d3c9e478720cde0dda9d5f&amp;type=3#ItemSlotBackground&apos;); background-color: rgba(255, 255, 255, 0); -unity-text-align: lower-right; width: 120px; height: 120px;" />
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>

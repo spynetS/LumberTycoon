@@ -6,13 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d1567dee-f1b4-430c-b251-2a44617addfb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tycooner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tycooner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Machine/Refiner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Machine/Refiner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Machine/3d/Materials/Prototype 1_DefaultMaterial_BaseMap 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Machine/3d/Materials/Prototype 1_DefaultMaterial_BaseMap 1.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resorces/DroppedItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resorces/DroppedItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resorces/Stone1/stonedropped.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resorces/Stone1/stonedropped.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resorces/Tree/wooddroped1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resorces/Tree/wooddroped1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Ui/PlayerInventoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Ui/PlayerInventoryController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/inventory.uxml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/inventory.uxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1696a8cfee624465a20176b1ed78176612b800/3d/377703be/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d8e40667a04f4ebea32807892bd421f3159c00/6a/ca29658d/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/de80aed0bd3646409e8bfb15c101f005e2000/ca/97361307/KeyValuePair`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d44b17e136d09081da1e8fd0e8c83fde60e11818b9f2442d7ed8cb733fae895e/System.Collections.Generic.cs" root0="SKIP_HIGHLIGHTING" />
@@ -112,6 +112,8 @@
       <workItem from="1682162005609" duration="1526000" />
       <workItem from="1682431024147" duration="2155000" />
       <workItem from="1682438560233" duration="6020000" />
+      <workItem from="1685114390633" duration="2731000" />
+      <workItem from="1685119202133" duration="999000" />
     </task>
     <servers />
   </component>
