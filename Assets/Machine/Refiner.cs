@@ -7,6 +7,11 @@ namespace Mechine{
     public class Refiner : MechinePart
     {
         public TMP_Text mytext;
+        
+        private AudioSource machineAudio;
+        private float volume;
+        public audioClip factory;
+        
         public override void updateMechine()
         {
             base.updateMechine();
@@ -18,6 +23,8 @@ namespace Mechine{
                     RefineItem item = items[i].GetComponent<RefineItem>();
                     item.refined++;
                     text += item.refined.ToString()+",";
+                    
+                    machineAudio.PlayOneShot(factory, volume);
                     
                     if(item.refined > 100)
                     {
