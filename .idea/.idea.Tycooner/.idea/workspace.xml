@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1567dee-f1b4-430c-b251-2a44617addfb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/LuMine/Hacka2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuMine/Hacka2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuMine/Hacka2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuMine/Hacka2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuMine/ItemAxe2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuMine/ItemAxe2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuMine/ItemAxe2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuMine/ItemAxe2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuMine/Stoneslot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuMine/Stoneslot.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuMine/maskin2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuMine/maskin2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuMine/maskin2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuMine/maskin2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuMine/rör2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuMine/rör2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuMine/rör2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuMine/rör2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/BuyScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/BuyScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +118,7 @@
       <workItem from="1682438560233" duration="6020000" />
       <workItem from="1685114390633" duration="2731000" />
       <workItem from="1685119202133" duration="2202000" />
+      <workItem from="1685458385762" duration="599000" />
     </task>
     <servers />
   </component>
