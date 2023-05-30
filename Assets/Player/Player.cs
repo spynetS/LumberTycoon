@@ -11,12 +11,15 @@ namespace Player{
     public class Player : MonoBehaviour
     {
         public TMP_Text mytext;
+        public TMP_Text action;
         public Inventory inventory;
         public PlayerMovement playerMovement;
         public float money = 10000;
+        public bool shop = false;
+        
         private void Update()
         {
-            mytext.text = money.ToString();
+            mytext.text = "$ " + money.ToString();
             if (isDead)
             {
                 foreach(Stack stack in inventory.stacks)
@@ -79,8 +82,23 @@ namespace Player{
             {
                 isDead = true;
             }
+
+            if (other.name == "shop")
+            {
+                shop = true;
+                action.text = "Press E \n Drop items to sell them";
+            }
         }
-        
+
+        private void OnTriggerExit(Collider other)
+        {
+            if (other.name == "shop")
+            {
+                shop = false;
+                action.text = "";
+            }
+        }
+
         public void dropItem(GameObject ob)
         {
             ob.transform.position = transform.position + (transform.forward * 5);

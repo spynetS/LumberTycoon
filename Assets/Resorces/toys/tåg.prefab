@@ -367,8 +367,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d8e6b076e15091d9015dbf8f3ac148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryImage: {fileID: 21300000, guid: be340a165cb9c8d4cb50f1deeb51d4ea, type: 3}
+  inventoryImage: {fileID: 21300000, guid: d582fc1a487c461d2aa7e6681bbc5ca6, type: 3}
   name: train
+  canSell: 1
+  sellAmount: 10
 --- !u!65 &3546405464182678139
 BoxCollider:
   m_ObjectHideFlags: 0

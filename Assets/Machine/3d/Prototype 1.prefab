@@ -192,7 +192,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 385269772218304090}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -3.3680687, y: 0, z: -2.5982265}
+  m_LocalPosition: {x: -13.15, y: 0, z: -2.5982265}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1371,6 +1371,14 @@ MonoBehaviour:
   input: {fileID: 3917355855738359132}
   refiner: {fileID: 3917355856067172260}
   output: {fileID: 3917355854894553737}
+  tube: {fileID: 0}
+  particle0: {fileID: 0}
+  particle1: {fileID: 0}
+  round0: {fileID: 0}
+  round1: {fileID: 0}
+  round2: {fileID: 0}
+  round: 0
+  particle: 0
 --- !u!1 &4454444763469063618
 GameObject:
   m_ObjectHideFlags: 0
@@ -2765,6 +2773,8 @@ MonoBehaviour:
   nextPart: {fileID: 3917355854894553737}
   timeBetweenUpdates: 100
   mytext: {fileID: 0}
+  volume: 0
+  factory: {fileID: 0}
 --- !u!1 &8782204539246295751
 GameObject:
   m_ObjectHideFlags: 0

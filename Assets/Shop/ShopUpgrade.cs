@@ -5,16 +5,34 @@ using Mechine;
 using UnityEngine;
 using Player;
 using Unity.VisualScripting;
+using Input = UnityEngine.Input;
 
 public class ShopUpgrade : MonoBehaviour
 {
     public Player.Player player;
     public Mechine.Machine machine;
+    public Canvas canvas;
 
     private void Start()
     {
         player = GameObject.FindWithTag("Player").GetComponent<Player.Player>();
         machine = GameObject.FindWithTag("Machine").GetComponent<Mechine.Machine>();
+    }
+
+    public void turnOnCanvas()
+    {
+        canvas.enabled = !canvas.enabled;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = !Cursor.visible;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && player.shop)
+        {
+            turnOnCanvas();     
+        }
+        if(!player.shop && canvas.enabled) turnOnCanvas();
     }
 
     public void upgradeSpeed(int amount)
@@ -28,18 +46,22 @@ public class ShopUpgrade : MonoBehaviour
 
     public void upgradeInventory(float amount)
     {
-        if (buy(amount))
+        if (player.inventory.stackSize < 8)
         {
-            player.inventory.stackSize += 5;
+            if (buy(amount)) {
+                player.inventory.stackSize += 5;
+            }
         }
     }
 
     public void upgradeMachineSpeed(float amount)
     {
-        if (buy(amount))
+        if (machine.refiner.GetComponent<Refiner>().timeBetweenUpdates > 5)
         {
-            machine.refiner.GetComponent<Refiner>().timeBetweenUpdates -= 5;
-            machine.turnOnRoundThing();
+            if (buy(amount)) {
+                machine.refiner.GetComponent<Refiner>().timeBetweenUpdates -= 5;
+                machine.turnOnTube();
+            }
         }
     }
     // "1;100"  first part secound money
@@ -65,6 +87,7 @@ public class ShopUpgrade : MonoBehaviour
         if (buy(amount))
         {
             part.maxRefineItems++;
+            machine.turnOnRoundThing();
         }
     }
     

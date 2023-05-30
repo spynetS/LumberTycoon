@@ -18,6 +18,10 @@ namespace Player
             {"wooddroped",10},
             {"stonedroped",5},
             {"saphire",5},
+            {"ruby",5},
+            {"stol",2},
+            {"train",2},
+            {"wagen",2},
             
         };
 
