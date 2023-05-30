@@ -15,10 +15,6 @@ public class PlayerInventoryController : MonoBehaviour
         transform.GetComponent<Canvas>().enabled = !transform.GetComponent<Canvas>().enabled;
     }
 
-    private void Start()
-    {
-    }
-
     void Update()
     {
         // turn on invetory
@@ -26,6 +22,7 @@ public class PlayerInventoryController : MonoBehaviour
         {
             VisualElement e = inventory.rootVisualElement.Q("Container");
             e.style.display = e.style.display == DisplayStyle.Flex ? DisplayStyle.None : DisplayStyle.Flex;
+            //e.style.opacity = e.style.opacity == 100 ? 0 : 100;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = !Cursor.visible;
             //toggleCanvas(); 

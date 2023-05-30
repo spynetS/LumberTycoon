@@ -36,6 +36,8 @@ namespace UI_Toolkit
         } 
         public void Update()
         {
+            //Label parentElement = uiDocument.rootVisualElement.Q<Label>("Header");
+            //parentElement.text = "Inventory - size:" + GameObject.FindWithTag("Player").GetComponent<Player.Inventory>().stackSize.ToString();
             reset();
             for (int i = 0; i < inventory.stacks.Count; i++)
             {
