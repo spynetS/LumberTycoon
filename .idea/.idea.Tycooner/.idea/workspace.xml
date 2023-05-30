@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1567dee-f1b4-430c-b251-2a44617addfb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tycooner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tycooner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Machine/3d/Materials/Prototype 1_DefaultMaterial_BaseMap 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Machine/3d/Materials/Prototype 1_DefaultMaterial_BaseMap 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Ui/PlayerInventoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Ui/PlayerInventoryController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/inventory.uxml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/inventory.uxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/BuyScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/BuyScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +108,7 @@
       <workItem from="1682431024147" duration="2155000" />
       <workItem from="1682438560233" duration="6020000" />
       <workItem from="1685114390633" duration="2731000" />
-      <workItem from="1685119202133" duration="999000" />
+      <workItem from="1685119202133" duration="2202000" />
     </task>
     <servers />
   </component>
