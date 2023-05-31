@@ -60,10 +60,16 @@ public class ShopUpgrade : MonoBehaviour
 
     public void upgradeInventory(float amount)
     {
-        if (player.inventory.stackSize < 8)
+        if (player.inventory.stackSize < 12)
         {
             if (buy(amount)) {
                 player.inventory.stackSize += 5;
+            }
+        }
+        else
+        {
+            if (buy(amount)) {
+                player.inventory.stackSize = 12;
             }
         }
     }
@@ -74,6 +80,13 @@ public class ShopUpgrade : MonoBehaviour
         {
             if (buy(amount)) {
                 machine.refiner.GetComponent<Refiner>().timeBetweenUpdates -= 5;
+                machine.turnOnTube();
+            }
+        }
+        else
+        {
+            if (buy(amount)) {
+                machine.refiner.GetComponent<Refiner>().timeBetweenUpdates = 1;
                 machine.turnOnTube();
             }
         }

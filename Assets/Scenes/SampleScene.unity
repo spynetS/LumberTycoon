@@ -7161,6 +7161,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Machine
       objectReference: {fileID: 0}
+    - target: {fileID: 2016039043546890587, guid: 1b408609d273ab1e398858f5ec4be134, type: 3}
+      propertyPath: timeBetweenUpdates
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2049368355798984370, guid: 1b408609d273ab1e398858f5ec4be134, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -7279,6 +7283,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5896284913896923488, guid: 46ebf9a1e30dfd041a1ebe9c900ff7f7, type: 3}
+      propertyPath: amount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5896284913896923492, guid: 46ebf9a1e30dfd041a1ebe9c900ff7f7, type: 3}
       propertyPath: m_RootOrder
       value: 84
