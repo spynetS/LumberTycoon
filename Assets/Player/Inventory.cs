@@ -27,6 +27,7 @@ namespace Player
             {"ruby ore",2},
             {"dia ore",2},
             {"coal ore",2},
+            {"stone ore",2},
             {"aluminium ore",2},
             
             

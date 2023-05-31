@@ -84,6 +84,9 @@ public class ShopUpgrade : MonoBehaviour
 
     public void upgradeMachineSpeed(float amount)
     {
+
+        amount += 10 * (100 - machine.refiner.timeBetweenUpdates);
+        
         if (machine.refiner.GetComponent<Refiner>().timeBetweenUpdates > 5)
         {
             if (buy(amount)) {
@@ -91,7 +94,7 @@ public class ShopUpgrade : MonoBehaviour
                 machine.turnOnTube();
             }
         }
-        else
+        else if (machine.refiner.GetComponent<Refiner>().timeBetweenUpdates > 1)
         {
             if (buy(amount)) {
                 machine.refiner.GetComponent<Refiner>().timeBetweenUpdates = 1;
