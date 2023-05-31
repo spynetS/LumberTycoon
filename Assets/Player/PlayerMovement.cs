@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -10,10 +11,9 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 10f;
     public float lookSensitivity = 3f;
     
-    [Header("Sound")]
-    private AudioSource playerAudio;
-    public float volume;
-    public AudioClip footstep;
+    public AudioSource footstep;
+    private float timer;
+    private float maxTimer = 1f;
 
     [SerializeField] private bool isGrounded;
     
@@ -27,7 +27,6 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         playerCamera = GetComponentInChildren<Camera>();
-        playerAudio = GetComponent<AudioSource>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -79,6 +78,19 @@ public class PlayerMovement : MonoBehaviour
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         float verticalInput = Input.GetAxisRaw("Vertical");
 
+        if (horizontalInput != 0 && timer <= 0) 
+        {
+            footstep.Play();
+            timer = maxTimer;
+        }
+
+        if (verticalInput != 0 && timer <= 0)
+        {
+            footstep.Play();
+            timer = maxTimer;
+        }
+        timer -= Time.deltaTime;
+
         Vector3 movement = (transform.forward * verticalInput + transform.right * horizontalInput).normalized;
         rb.velocity = (movement * (moveSpeed * 50 * Time.fixedDeltaTime)) + new Vector3(0f, rb.velocity.y, 0f);
     }
@@ -87,7 +99,6 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
-            playerAudio.PlayOneShot(footstep, volume);
         }
     }
 }

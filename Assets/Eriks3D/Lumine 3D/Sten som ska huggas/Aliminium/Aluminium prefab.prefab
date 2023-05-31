@@ -163,9 +163,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f900123f95cb55aace8f3be4933239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 1000
   dropMin: 1
-  dropMax: 4
+  dropMax: 2
   dropers:
   - {fileID: 6084338743795345005, guid: 0716280c1d0948748ae74f0c62136e00, type: 3}
   animator: {fileID: 3748433122752749101}

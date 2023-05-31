@@ -50,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   dropMin: 1
-  dropMax: 4
+  dropMax: 8
   dropers:
   - {fileID: 6084338743795345005, guid: df15e9e634b129741b9a7044bd6e2e33, type: 3}
   animator: {fileID: 466411008233403326}

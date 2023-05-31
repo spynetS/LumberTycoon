@@ -22,7 +22,7 @@ public class AiSpawner : MonoBehaviour
         if (ais.Count < amount)
         { 
             GameObject g = Instantiate(prefab, transform);
-            g.transform.position += new Vector3(Random.Range(-area.x,area.x), g.transform.position.y, Random.Range(-area.y,area.y));
+            g.transform.position += new Vector3(Random.Range(-area.x,area.x), 0f, Random.Range(-area.y,area.y));
             ais.Add(g);
             
         }

@@ -121,7 +121,7 @@ MonoBehaviour:
   inventoryImage: {fileID: 21300000, guid: bd8811060c02dd990ba78841876247d4, type: 3}
   name: saphire
   canSell: 1
-  sellAmount: 100
+  sellAmount: 200
 --- !u!65 &6084338743795344992
 BoxCollider:
   m_ObjectHideFlags: 0
