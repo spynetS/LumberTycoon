@@ -32,9 +32,6 @@ public class PlayerInventoryController : MonoBehaviour
         {
             VisualElement e = inventory.rootVisualElement.Q("Container");
             e.style.display = DisplayStyle.None;
-            //e.style.opacity = e.style.opacity == 100 ? 0 : 100;
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = false;
         }
     }
 }
