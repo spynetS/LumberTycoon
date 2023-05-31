@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1567dee-f1b4-430c-b251-2a44617addfb" name="Changes" comment="" />
+    <list default="true" id="d1567dee-f1b4-430c-b251-2a44617addfb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tycooner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tycooner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Machine/Machine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Machine/Machine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Attack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Terrain_sample.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Terrain_sample.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/inventory.uxml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/inventory.uxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,6 +115,7 @@
       <workItem from="1685114390633" duration="2731000" />
       <workItem from="1685119202133" duration="2202000" />
       <workItem from="1685458385762" duration="10064000" />
+      <workItem from="1685525852073" duration="1658000" />
     </task>
     <servers />
   </component>
