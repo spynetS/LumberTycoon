@@ -63,7 +63,7 @@ public class ShopUpgrade : MonoBehaviour
         if (player.inventory.stackSize < 12)
         {
             if (buy(amount)) {
-                player.inventory.stackSize += 5;
+                player.inventory.stackSize += 1;
             }
         }
         else

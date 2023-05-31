@@ -12,6 +12,7 @@ namespace UI_Toolkit
     {
         public UIDocument uiDocument;
         public Sprite empty;
+        public Sprite locked;
         public Player.Inventory inventory;
         public List<Button> stacks = new List<Button>();
         public Player.Player player;
@@ -51,6 +52,10 @@ namespace UI_Toolkit
             foreach (Button child in stacks)
             { 
                 child.style.backgroundImage = new StyleBackground(empty);
+            }
+            for (int i = inventory.stackSize; i < 12; i++)
+            {
+                stacks[i].style.backgroundImage = new StyleBackground(locked);
             }
         }
         public void DropItem(ClickEvent evt)
