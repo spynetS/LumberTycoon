@@ -28,6 +28,7 @@ public class Attack : MonoBehaviour
         }
         if (!Cursor.visible && Input.GetMouseButton(0)){ // if mouse is down 
             tool.attackAnimation();
+            
             // if there is a resource in range and the timer is right 
             RaycastHit hit;
             // Does the ray intersect any objects excluding the player layer

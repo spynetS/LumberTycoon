@@ -16,6 +16,7 @@ public class Tool : MonoBehaviour
     public void attackAnimation()
     {
         animator.SetTrigger("hit");
+        hitSound.Play();
     }
 
     private void Update()
