@@ -153,6 +153,7 @@ MonoBehaviour:
   animator: {fileID: 9044742161241183607}
   workingTools:
   - axe
+  resourceName: Small Oak
 --- !u!95 &9044742161241183607
 Animator:
   serializedVersion: 5

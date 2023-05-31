@@ -171,6 +171,7 @@ MonoBehaviour:
   animator: {fileID: 3748433122752749101}
   workingTools:
   - pickaxe
+  resourceName: Aluminium
 --- !u!95 &3748433122752749101
 Animator:
   serializedVersion: 5

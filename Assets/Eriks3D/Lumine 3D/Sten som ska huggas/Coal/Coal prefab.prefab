@@ -290,6 +290,7 @@ MonoBehaviour:
   animator: {fileID: 9072616347393817677}
   workingTools:
   - pickaxe
+  resourceName: Coal
 --- !u!1001 &2267074621664383404
 PrefabInstance:
   m_ObjectHideFlags: 0

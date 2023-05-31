@@ -278,3 +278,4 @@ MonoBehaviour:
   animator: {fileID: 8431350691213664275}
   workingTools:
   - axe
+  resourceName: Pine Tree

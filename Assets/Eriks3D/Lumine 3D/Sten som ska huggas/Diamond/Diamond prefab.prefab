@@ -154,6 +154,7 @@ MonoBehaviour:
   animator: {fileID: 3595056612646573142}
   workingTools:
   - pickaxe
+  resourceName: Diamond
 --- !u!95 &3595056612646573142
 Animator:
   serializedVersion: 5

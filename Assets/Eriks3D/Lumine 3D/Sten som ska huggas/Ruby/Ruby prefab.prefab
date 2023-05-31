@@ -171,6 +171,7 @@ MonoBehaviour:
   animator: {fileID: 5031265642392523917}
   workingTools:
   - pickaxe
+  resourceName: Ruby
 --- !u!95 &5031265642392523917
 Animator:
   serializedVersion: 5

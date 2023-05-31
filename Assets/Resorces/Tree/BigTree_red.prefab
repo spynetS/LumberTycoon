@@ -180,6 +180,7 @@ MonoBehaviour:
   animator: {fileID: -5291758722222082026}
   workingTools:
   - axe
+  resourceName: Big Oak
 --- !u!1 &8923026930543672558
 GameObject:
   m_ObjectHideFlags: 0
