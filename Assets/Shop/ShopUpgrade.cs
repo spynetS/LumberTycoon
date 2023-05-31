@@ -12,12 +12,26 @@ public class ShopUpgrade : MonoBehaviour
     public Player.Player player;
     public Mechine.Machine machine;
     public Canvas canvas;
+    public List<GameObject> tools;
 
     private void Start()
     {
         player = GameObject.FindWithTag("Player").GetComponent<Player.Player>();
         machine = GameObject.FindWithTag("Machine").GetComponent<Mechine.Machine>();
     }
+
+    public void buyTool(string value)
+    {
+        int index = int.Parse(value.Split(";")[0]);
+        float amount = float.Parse(value.Split(";")[1]);
+
+        if (buy(amount))
+        {
+            player.addTool(tools[index]);
+        }
+        
+    }
+    
 
     public void turnOnCanvas()
     {
@@ -69,17 +83,20 @@ public class ShopUpgrade : MonoBehaviour
     {
         int index = int.Parse(value.Split(";")[0]);
         float amount = float.Parse(value.Split(";")[1]);
-        switch (index)
+        if (buy(amount))
         {
-           case 0:
-               upgradeMachineHolder(machine.input, amount);
-               break;
-           case 1:
-               upgradeMachineHolder(machine.refiner, amount);
-               break;
-           case 2:
-               upgradeMachineHolder(machine.output, amount);
-               break;
+            switch (index)
+            {
+               case 0:
+                   upgradeMachineHolder(machine.input, amount);
+                   break;
+               case 1:
+                   upgradeMachineHolder(machine.refiner, amount);
+                   break;
+               case 2:
+                   upgradeMachineHolder(machine.output, amount);
+                   break;
+            }
         }
     }
     public void upgradeMachineHolder(MechinePart part, float amount)

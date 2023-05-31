@@ -92,6 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1653739162689004226}
+  - component: {fileID: 7409270608257725789}
   m_Layer: 0
   m_Name: Yxa2
   m_TagString: Untagged
@@ -107,8 +108,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141623994951579768}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.819231, y: 0, z: 6.7057605}
-  m_LocalScale: {x: 0.8384776, y: 0.8384776, z: 0.8384776}
+  m_LocalPosition: {x: 0, y: -0.3, z: 0}
+  m_LocalScale: {x: -0.175752, y: 0.177656, z: 0.12765597}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5567381486006476568}
@@ -116,6 +117,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7409270608257725789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141623994951579768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5575be23b0434988b9b4eb40eb935dbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 50
+  timeBetweenHits: 10
+  name: axe
+  animator: {fileID: 0}
 --- !u!1 &2576289771077536553
 GameObject:
   m_ObjectHideFlags: 0
