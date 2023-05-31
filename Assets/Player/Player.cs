@@ -97,12 +97,15 @@ namespace Player{
             ist.GetComponent<Tool>().animator = holder.GetComponent<Animator>();
             holder.GetComponent<Attack>().tool = ist.GetComponent<Tool>();
 
-            for(int i = 0; i < holder.transform.childCount; i++)
+            if (holder.transform.childCount > 0)
             {
-                GameObject child = holder.transform.GetChild(i).gameObject;
-                if (child != ist)
+                for(int i = 0; i < holder.transform.childCount; i++)
                 {
-                    child.SetActive(false);
+                    GameObject child = holder.transform.GetChild(i).gameObject;
+                    if (child != ist)
+                    {
+                        child.SetActive(false);
+                    }
                 }
             }
             

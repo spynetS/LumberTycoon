@@ -69,11 +69,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: fa5850ad06b93d75a82179d3fa157be9, type: 2}
     - target: {fileID: 919132149155446097, guid: e4d3b4c91133751c1b0b3e3875da8be3, type: 3}
       propertyPath: m_Name
-      value: Pickaxe
+      value: Pickaxe Variant
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e4d3b4c91133751c1b0b3e3875da8be3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4d3b4c91133751c1b0b3e3875da8be3, type: 3}
