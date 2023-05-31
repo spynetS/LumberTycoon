@@ -9,6 +9,7 @@ public class Attack : MonoBehaviour
     public int timer = 100000;
     public float hitdistance = 5;
     public Transform camera;
+    public Resource aimingAt;
     
     [Header("Sound")]
     private AudioSource weaponAudio;
@@ -44,6 +45,19 @@ public class Attack : MonoBehaviour
             }
         }
         timer++;
+        RaycastHit hit2;
+
+        if (Physics.Raycast(camera.position, camera.TransformDirection(Vector3.forward), out hit2, hitdistance))
+        {
+            Debug.Log(hit2.transform.gameObject.name);
+            Resource resource ;//= hit2.transform.gameObject.GetComponent<Resource>();
+            if ((resource = hit2.transform.GetComponent<Resource>()) != null || (resource = hit2.transform.GetComponentInParent<Resource>()) != null)
+            {
+                aimingAt = resource;
+            }
+        }
+        else aimingAt = null;
+
     }
 
 }

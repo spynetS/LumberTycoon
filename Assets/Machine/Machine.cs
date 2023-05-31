@@ -59,11 +59,13 @@ namespace Mechine
             try
             {
                 refineText.text = getMostRefined().refined + "%\n" +
+                                  "speed: "+ ((101-refiner.timeBetweenUpdates)) +"%\n"+
                                   refiner.items.Count + " / " + refiner.maxRefineItems + " st";
             }
             catch
             {
                 refineText.text = "0%\n" +
+                                  "speed: "+ ((101-refiner.timeBetweenUpdates)) +"%\n"+
                                   refiner.items.Count + " / " + refiner.maxRefineItems + " st";
             }
         }

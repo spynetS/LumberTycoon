@@ -1,6 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/LuMine/Inventory.uss?fileID=7433441132597879392&amp;guid=0f526111887afdd47b805150405867ec&amp;type=3#Inventory" />
-    <ui:VisualElement name="Container" class="container" style="display: flex; visibility: visible; overflow: visible; opacity: 1;">
+    <ui:VisualElement name="Container" class="container" style="display: none; visibility: visible; overflow: visible; opacity: 1;">
         <ui:VisualElement name="Inventory" class="inventory" style="width: 500px; height: 75px; max-width: 134%; opacity: 1; display: flex; visibility: visible;">
             <ui:VisualElement name="Header" class="header">
                 <ui:Label text="Inventory" display-tooltip-when-elided="true" style="width: 121px;" />
