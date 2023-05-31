@@ -12,12 +12,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e4d3b4c91133751c1b0b3e3875da8be3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 30.174
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e4d3b4c91133751c1b0b3e3875da8be3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 30.174
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e4d3b4c91133751c1b0b3e3875da8be3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 30.174
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e4d3b4c91133751c1b0b3e3875da8be3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e4d3b4c91133751c1b0b3e3875da8be3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.446
+      value: -0.09
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e4d3b4c91133751c1b0b3e3875da8be3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -57,7 +69,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: fa5850ad06b93d75a82179d3fa157be9, type: 2}
     - target: {fileID: 919132149155446097, guid: e4d3b4c91133751c1b0b3e3875da8be3, type: 3}
       propertyPath: m_Name
-      value: Pickaxe Variant
+      value: Pickaxe
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e4d3b4c91133751c1b0b3e3875da8be3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4d3b4c91133751c1b0b3e3875da8be3, type: 3}
@@ -66,27 +82,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e4d3b4c91133751c1b0b3e3875da8be3, type: 3}
   m_PrefabInstance: {fileID: 9163979430180746074}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &2150967460067631816
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8353499377392012811}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 44c8b4e718e464d15b88633d1b857a4b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &5592044544728585484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,6 +95,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
-  timeBetweenHits: 100
+  timeBetweenHits: 10
   name: pickaxe
-  animator: {fileID: 2150967460067631816}
+  animator: {fileID: 0}

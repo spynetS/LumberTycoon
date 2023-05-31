@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2194476553387881958}
   - component: {fileID: 3016148794511505987}
   - component: {fileID: 1026666855429066377}
+  - component: {fileID: 6028381173714555566}
   m_Layer: 0
   m_Name: Diamond pickaxe
   m_TagString: Untagged
@@ -25,14 +26,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531092348290461532}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.055243, y: 2.719, z: 3.76}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_ConstrainProportionsScale: 0
+  m_LocalRotation: {x: -0.94591564, y: 0, z: 0, w: 0.32441282}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 11.6, y: 11.6, z: 11.6}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -142.14, y: 0, z: 0}
 --- !u!33 &3016148794511505987
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -51,7 +52,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -83,3 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6028381173714555566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531092348290461532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5575be23b0434988b9b4eb40eb935dbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100
+  timeBetweenHits: 10
+  name: axe
+  animator: {fileID: 0}

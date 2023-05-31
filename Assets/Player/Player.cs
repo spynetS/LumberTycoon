@@ -16,6 +16,7 @@ namespace Player{
         public PlayerMovement playerMovement;
         public float money = 10000;
         public bool shop = false;
+        public GameObject holder;
         
         private void Update()
         {
@@ -90,6 +91,23 @@ namespace Player{
             }
         }
 
+        public void addTool(GameObject tool)
+        {
+            GameObject ist = Instantiate(tool, holder.transform);
+            ist.GetComponent<Tool>().animator = holder.GetComponent<Animator>();
+            holder.GetComponent<Attack>().tool = ist.GetComponent<Tool>();
+
+            for(int i = 0; i < holder.transform.childCount; i++)
+            {
+                GameObject child = holder.transform.GetChild(i).gameObject;
+                if (child != ist)
+                {
+                    child.SetActive(false);
+                }
+            }
+            
+            
+        }
         private void OnTriggerExit(Collider other)
         {
             if (other.name == "shop")
@@ -101,7 +119,7 @@ namespace Player{
 
         public void dropItem(GameObject ob)
         {
-            ob.transform.position = transform.position + (transform.forward * 5);
+            ob.transform.position = transform.position + (transform.forward * 3);
             ob.SetActive(true);
             ob.GetComponent<DroppedItem>().drop();
             inventory.remove(ob);
