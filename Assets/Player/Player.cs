@@ -89,6 +89,7 @@ namespace Player{
                 shop = true;
                 action.text = "Press E \n Drop items to sell them";
             }
+            
         }
 
         public void addTool(GameObject tool)

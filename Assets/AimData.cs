@@ -25,7 +25,7 @@ public class AimData : MonoBehaviour
         Resource resource = attack.aimingAt;
         if (resource != null)
         {
-            name.text = "Name: " + resource.name;
+            name.text = "Name: " + resource.resourceName;
             health.text = "Health: " + resource.health.ToString();
             string d = "Dropping: ";
             foreach (GameObject a in resource.dropers)

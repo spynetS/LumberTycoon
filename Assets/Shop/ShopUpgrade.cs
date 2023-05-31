@@ -46,6 +46,14 @@ public class ShopUpgrade : MonoBehaviour
         {
             turnOnCanvas();     
         }
+        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            canvas.enabled = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+        
         if(!player.shop && canvas.enabled) turnOnCanvas();
     }
 

@@ -10,6 +10,7 @@ public class Resource : MonoBehaviour
     public List<GameObject> dropers;
     public Animator animator;
     public List<string> workingTools;
+    public string resourceName = "Tree";
     public void drop()
     {
         int amount = (int) Random.Range(dropMin, dropMax);

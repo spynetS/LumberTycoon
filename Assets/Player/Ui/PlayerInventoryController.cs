@@ -27,5 +27,14 @@ public class PlayerInventoryController : MonoBehaviour
             Cursor.visible = !Cursor.visible;
             //toggleCanvas(); 
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            VisualElement e = inventory.rootVisualElement.Q("Container");
+            e.style.display = DisplayStyle.None;
+            //e.style.opacity = e.style.opacity == 100 ? 0 : 100;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
 }
