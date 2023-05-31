@@ -50,7 +50,7 @@ public class ShopUpgrade : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             canvas.enabled = false;
-            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.lockState = CursorLockMode.None;
             Cursor.visible = false;
         }
         
