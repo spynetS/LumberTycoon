@@ -39,12 +39,15 @@ public class Attack : MonoBehaviour
                 if (hit.transform.tag != "Player")
                 {
                     hit.transform.GetComponentInParent<Resource>().getDamage(tool);
-                    if(!tool.hitSound.isPlaying)
-                        tool.hitSound.Play();
-                    
                     timer = 0;
+
+                    try
+                    {
+                        if(!tool.hitSound.isPlaying)
+                            tool.hitSound.Play();
+                    }catch{}
                     
-                    weaponAudio.PlayOneShot(hitSound, volume);
+                    //weaponAudio.PlayOneShot(hitSound, volume);
                 }
             }
         }
