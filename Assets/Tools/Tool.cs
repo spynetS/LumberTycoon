@@ -16,22 +16,11 @@ public class Tool : MonoBehaviour
     public void attackAnimation()
     {
         animator.SetTrigger("hit");
-        if(!hitSound.isPlaying)
-            hitSound.Play();
         
     }
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) == true && timer <= 0)
-        {
-            hitSound.Play();
-            timer = hitTime;
-        }
-        if (timer> 0)
-        {
-            timer -= Time.deltaTime;
-        }
 
     }
 
