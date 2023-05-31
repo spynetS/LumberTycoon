@@ -17,7 +17,7 @@ namespace Player{
         public float money = 10000;
         public bool shop = false;
         public GameObject holder;
-        
+        public Vector3 spawnPoint; 
         private void Update()
         {
             mytext.text = "$ " + money.ToString();
@@ -33,7 +33,7 @@ namespace Player{
                 if (inventory.stacks.Count == 0)
                 {
                     isDead = false;
-                    transform.position = new Vector3(0, 10, 0);
+                    transform.position = spawnPoint;
                 }
             }
         }
