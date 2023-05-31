@@ -23,6 +23,13 @@ namespace Player
             {"train",2},
             {"wagen",2},
             
+            {"saphire ore",2},
+            {"ruby ore",2},
+            {"dia ore",2},
+            {"coal ore",2},
+            {"aluminium ore",2},
+            
+            
         };
 
         public int stackSize = 3;
