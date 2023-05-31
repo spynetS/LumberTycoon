@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Buttonscript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public GameObject panel;
+    
+    public void turnOn()
     {
-        
+        panel.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void turnOff()
     {
-        
+        panel.SetActive(false);
     }
+    
 }
